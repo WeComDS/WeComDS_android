@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">WSW</string>
-    <string name="email">email</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgotpass">Forgot password?</string>
+    <string name="login">Login</string>
+    <string name="signup">Sign Up</string>
+    <string name="name">Name</string>
 </resources>
