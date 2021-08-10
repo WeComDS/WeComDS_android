@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">WSW</string>
+    <string name="email">email</string>
 </resources>
