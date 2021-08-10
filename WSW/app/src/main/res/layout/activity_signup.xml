@@ -114,7 +114,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/signup"
+            android:layout_below="@id/signup"
             android:layout_marginTop="11dp"
             android:gravity="center">
 
@@ -126,14 +126,14 @@
                 android:text="@string/login"
                 android:textColor="#4F5950"
                 android:id="@+id/login_below"
-                android:layout_toRightOf="@+id/text_sign_up"/>
+                android:layout_toRightOf="@id/text_login_up"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/notosanskr_regular"
                 android:includeFontPadding="false"
                 android:text="Do you have an account already?  "
-                android:id="@+id/text_sign_up"/>
+                android:id="@+id/text_login_up"/>
 
         </RelativeLayout>
     </LinearLayout>
