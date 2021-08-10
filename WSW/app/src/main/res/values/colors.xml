@@ -7,5 +7,13 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+
+    <color name="colorPrimary">#FF58734C</color>
+    <color name="main_ic_background">#FFBBC4B6</color>
+
+
+    <color name="text_light_green">#FFBBC4B6</color>
     <color name="textColorGreen">#4F5950</color>
+
 </resources>
