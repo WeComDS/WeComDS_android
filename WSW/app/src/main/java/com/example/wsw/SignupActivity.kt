@@ -12,7 +12,7 @@ class SignupActivity : AppCompatActivity() {
 
         var login_below = findViewById<TextView>(R.id.login_below)
         login_below.setOnClickListener{
-            var intent = Intent(applicationContext, SignupActivity::class.java)
+            var intent = Intent(applicationContext, LoginActivity::class.java)
             startActivity(intent)
         }
     }
