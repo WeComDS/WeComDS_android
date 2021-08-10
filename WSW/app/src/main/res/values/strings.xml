@@ -6,4 +6,13 @@
     <string name="login">Login</string>
     <string name="signup">Sign Up</string>
     <string name="name">Name</string>
+
+    <string name="wsw">WSW</string>
+    <string name="secret_board">비밀게시판</string>
+    <string name="review">후기</string>
+    <string name="study">스터디</string>
+    <string name="HOT">HOT </string>
+    <string name="posting">게시물</string>
+    <string name="advertise">광고</string>
+
 </resources>
