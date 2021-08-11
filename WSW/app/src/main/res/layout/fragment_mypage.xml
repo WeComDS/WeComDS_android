@@ -10,7 +10,38 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <RelativeLayout style="@style/HomeTitleBar" >
 
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/back"/>
+
+            <TextView
+                style="@style/HomeTitleText"
+                android:text="@string/mypage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/back"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/img_account"
+                android:src="@drawable/ic_notifications" />
+
+
+            <ImageView
+                android:id="@+id/img_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/ic_account" />
+        </RelativeLayout>
 
         <ScrollView
             android:layout_width="match_parent"
@@ -21,48 +52,128 @@
                 android:layout_height="match_parent"
                 android:layout_marginLeft="28dp"
                 android:layout_marginRight="28dp"
-                android:layout_marginTop="44dp"
                 android:layout_marginBottom="38dp"
                 android:orientation="vertical">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="88dp"
-                    android:background="@drawable/main_border"
-                    android:paddingTop="18dp"
-                    android:paddingBottom="33dp"
-                    android:paddingRight="15dp"
-                    android:paddingLeft="21dp">
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/gray_border">
+
 
                     <TextView
-                        android:id="@+id/hotTextView"
-                        style="@style/Text15_Bold"
+                        style="@style/Text17_Bold_Green"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/HOT"
-                        android:textColor="@color/colorPrimary"/>
-
-                    <TextView
-                        android:id="@+id/postingTextView"
-                        style="@style/Text15_Bold"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/posting"
-                        android:textColor="#222622"
-                        android:layout_toRightOf="@+id/hotTextView"/>
-
-                    <!-- TODO list item 별도 생성?-->
-                    <ListView
-                        android:id="@+id/listview_hotposting"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="22dp"
-                        android:layout_alignBaseline="@+id/hotTextView"/>
+                        android:text="@string/group" />
 
                 </RelativeLayout>
 
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="88dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/gray_border">
+
+                    <TextView
+                        style="@style/Text17_Bold_Green"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/scrap" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="88dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/gray_border">
+
+                    <TextView
+                        style="@style/Text17_Bold_Green"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/apply_study" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="88dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/gray_border">
+
+                    <TextView
+                        style="@style/Text17_Bold_Green"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/msg" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="70dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:src="@drawable/gray_line"
+                        android:layout_marginBottom="14dp"/>
+
+                    <TextView
+                        style="@style/Text17_Bold_Green"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="7dp"
+                        android:text="@string/faq" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:src="@drawable/gray_line"
+                        android:layout_marginBottom="14dp"/>
+
+                    <TextView
+                        style="@style/Text17_Bold_Green"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="7dp"
+                        android:text="@string/logout" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:src="@drawable/gray_line"
+                        android:layout_marginBottom="14dp"/>
+
+                    <TextView
+                        style="@style/Text17_Bold_Green"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="7dp"
+                        android:text="@string/left" />
+
+                </RelativeLayout>
 
             </LinearLayout>
+
         </ScrollView>
+
     </LinearLayout>
+
 </FrameLayout>

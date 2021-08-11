@@ -15,8 +15,24 @@
     <string name="posting">게시물</string>
     <string name="advertise">광고</string>
 
+
+    <!-- Mypage -->
+    <string name="mypage">MYPAGE</string>
+    <string name="group">덕성여자대학교</string>
+    <string name="aboutme">김덕조/컴퓨터공학과</string>
+    <string name="scrap">스크랩</string>
+    <string name="apply_study">스터디 지원현황</string>
+    <string name="msg">쪽지함</string>
+    <string name="faq">FAQ</string>
+    <string name="logout">로그아웃</string>
+    <string name="left">회원탈퇴</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
     <string name="user_name">익명</string>
     <string name="search_hint">검색</string>
     <string name="comment_hint">댓글을 입력하세요!</string>
+
 
 </resources>
