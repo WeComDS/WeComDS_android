@@ -45,4 +45,10 @@
         <item name="android:fontFamily">@font/notosanskr_bold</item>
         <item name="android:textColor">@color/black</item>
     </style>
+
+    <style name="Text17_Bold_Green">
+        <item name="android:textSize">17sp</item>
+        <item name="android:fontFamily">@font/notosanskr_bold</item>
+        <item name="android:textColor">@color/textColorGreen</item>
+    </style>
 </resources>
