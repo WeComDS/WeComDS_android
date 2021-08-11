@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <item
+        android:id="@+id/menu_home"
+        android:icon="@drawable/ic_home"
+        android:title="home" />
+    <item
+        android:id="@+id/menu_mail"
+        android:icon="@drawable/ic_mail"
+        android:title="@string/wsw" />
+    <item
+        android:id="@+id/menu_groups"
+        android:icon="@drawable/ic_groups"
+        android:title="@string/secret_board" />
+    <item
+        android:id="@+id/menu_review"
+        android:icon="@drawable/ic_review"
+        android:title="@string/review" />
+    <item
+        android:id="@+id/menu_study"
+        android:icon="@drawable/ic_study"
+        android:title="@string/study" />
+</menu>
