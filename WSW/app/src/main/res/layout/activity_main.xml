@@ -6,11 +6,35 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <RelativeLayout style="@style/HomeTitleBar" android:id="@+id/homeTitleBar">
+
+        <TextView
+            style="@style/HomeTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/img_account"
+            android:src="@drawable/ic_notifications" />
+
+
+        <ImageView
+            android:id="@+id/img_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/ic_account" />
+    </RelativeLayout>
+
     <FrameLayout
         android:id="@+id/fragment_frame"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/bottom_nav"/>
+        android:layout_above="@+id/bottom_nav"
+        android:layout_below="@+id/homeTitleBar"/>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_nav"
