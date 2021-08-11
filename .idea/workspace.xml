@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a1c0b013-2627-4eea-b56c-f26b5a28a056" name="Default Changelist" comment="" />
+    <list default="true" id="a1c0b013-2627-4eea-b56c-f26b5a28a056" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/WSW/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/WSW/app/src/main/res/values/styles.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

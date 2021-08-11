@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="MainTitleBar">
+    <style name="HomeTitleBar">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">85dp</item>
         <item name="android:background">@color/colorPrimary</item>
@@ -10,16 +10,25 @@
         <item name="android:paddingRight">31dp</item>
     </style>
 
-    <style name="TitleBar" parent="MainTitleBar">
-        <item name="android:layout_height">71dp</item>
-    </style>
-
-    <style name="MainTitleText">
+    <style name="HomeTitleText">
         <item name="android:textSize">30sp</item>
         <item name="android:text">@string/app_name</item>
         <item name="android:fontFamily">@font/blackhansans_regular</item>
         <item name="android:textColor">@color/white</item>
     </style>
+
+
+    <style name="TitleBar" parent="HomeTitleBar">
+        <item name="android:layout_height">71dp</item>
+        <item name="android:paddingLeft">22dp</item>
+    </style>
+
+    <style name="TitleText" parent="HomeTitleText">
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/blackhansans_regular</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
 
     <style name="Text10_Bold">
         <item name="android:textSize">10sp</item>
