@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <RelativeLayout style="@style/HomeTitleBar" android:id="@+id/homeTitleBar">
+    <RelativeLayout style="@style/HomeTitleBar"
+        android:id="@+id/homeTitleBar">
 
         <TextView
             style="@style/HomeTitleText"
