@@ -29,17 +29,58 @@
         <item name="android:textColor">@color/white</item>
     </style>
 
+    <style name="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/dividerColor</item>
+    </style>
 
+    <style name="CommentEditText" parent="Text12_Regular">
+        <item name="android:background">@drawable/round_comment</item>
+        <item name="android:drawableRight">@drawable/ic_send</item>
+        <item name="android:hint">@string/comment_hint</item>
+        <item name="android:paddingLeft">19dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:textColor">#737373</item>
+    </style>
+
+    <style name="ContentText" parent="Text12_Regular">
+
+    </style>
+
+    <style name="ReccomendIcon" >
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">17dp</item>
+        <item name="android:background">@drawable/round_recommend_scrap</item>
+        <item name="android:src">@drawable/ic_recommend_green</item>
+    </style>
+    <style name="ScrapIcon">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">17dp</item>
+        <item name="android:background">@drawable/round_recommend_scrap</item>
+        <item name="android:src">@drawable/ic_scrap_green</item>
+    </style>
     <style name="Text10_Bold">
         <item name="android:textSize">10sp</item>
-        <item name="android:fontFamily">@font/notosanskr_bold</item>
         <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/notosanskr_bold</item>
     </style>
 
     <style name="Text10_BoldGreen" parent="Text10_Bold">
         <item name="android:textColor">#4f5950</item>
     </style>
 
+    <style name="Text12_Regular">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/notosanskr_regular</item>
+    </style>
+
+    <style name="Text12_Medium" parent="Text12_Regular">
+        <item name="android:fontFamily">@font/notosanskr_medium</item>
+    </style>
     <style name="Text15_Bold">
         <item name="android:textSize">15sp</item>
         <item name="android:fontFamily">@font/notosanskr_bold</item>

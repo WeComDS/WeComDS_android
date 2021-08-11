@@ -15,5 +15,6 @@
 
     <color name="text_light_green">#FFBBC4B6</color>
     <color name="textColorGreen">#4F5950</color>
+    <color name="dividerColor">#BFBFBF</color>
 
 </resources>

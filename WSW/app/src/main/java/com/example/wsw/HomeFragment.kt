@@ -19,6 +19,7 @@ class HomeFragment :Fragment(){
     //메모리에 올라갔을 때
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
     }
 
     // 프레그먼트를 안고 있는 액티비티에 붙었을 때
