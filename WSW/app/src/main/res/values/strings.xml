@@ -27,6 +27,14 @@
     <string name="logout">로그아웃</string>
     <string name="left">회원탈퇴</string>
 
+    <!--RandomMessage-->
+    <string name="todaymsg">"오늘 받은 편지에요"</string>
+    <string name="clickmsg">읽고 싶은 편지를 눌러보세요 : )</string>
+    <string name="preferencemsg">익명의 편지가 어떠셨나요?</string>
+    <string name="like">좋아요</string>
+    <string name="hate">별로에요</string>
+
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 

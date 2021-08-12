@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="227dp"
+    android:layout_height="139dp"
+    android:background="@drawable/dialog_green"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/randommsg_dialog">
+        <TextView
+            android:id="@+id/msg_dialog"
+            style="@style/Text12_Medium"
+            android:includeFontPadding="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:textStyle="bold"
+            android:text="@string/preferencemsg"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_marginLeft="42dp"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@id/msg_dialog"
+            android:background="@drawable/exit" />
+    </RelativeLayout>
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#FFFFFF"
+        android:layout_below="@id/randommsg_dialog" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/randommsg_dialog">
+
+        <TextView
+            style="@style/Text15_Bold"
+            android:textColor="@color/white"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/like"
+            android:gravity="center"/>
+
+        <TextView
+            style="@style/Text15_Bold"
+            android:textColor="@color/white"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/hate"
+            android:gravity="center"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="15dp"
+        android:paddingLeft="33dp">
+        <ImageButton
+            android:id="@+id/btn_like"
+            android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:background="@drawable/sentiment_satisfied"
+            android:gravity="center"/>
+
+        <ImageButton
+            android:id="@+id/btn_hate"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/sentiment_dissatisfied"
+            android:gravity="center"
+            android:layout_marginLeft="63dp"/>
+    </LinearLayout>
+</RelativeLayout>
