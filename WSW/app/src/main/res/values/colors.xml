@@ -14,6 +14,7 @@
 
 
     <color name="text_light_green">#FFBBC4B6</color>
+    <color name="text_gray">#838A84</color>
     <color name="textColorGreen">#4F5950</color>
   
     <color name="gray_border">#BFBFBF</color>
