@@ -3,7 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical">
 
     <RelativeLayout style="@style/TitleBar">
@@ -23,11 +22,11 @@
             android:layout_height="wrap_content"
             android:layout_toRightOf="@id/exit"
             android:includeFontPadding="false"
-            android:text="@string/write_review" />
+            android:text="@string/write_question" />
 
     </RelativeLayout>
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center_horizontal"
@@ -36,37 +35,8 @@
         android:layout_marginTop="28dp"
         android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="32dp"
-            android:orientation="horizontal">
-
-            <TextView
-                style="@style/Text14_Medium"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="12dp"
-                android:text="@string/company"/>
-
-            <EditText
-                style="@style/Text14_Medium"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/round_company_text"
-                android:paddingLeft="11dp"
-                android:paddingRight="20dp"
-                android:paddingTop="2dp"
-                android:paddingBottom="2dp"
-                android:enabled="false"
-                android:textColor="@color/gray"
-                tools:text="마이다스아이티"/>
-
-
-        </LinearLayout>
-
         <EditText
-            android:id="@+id/et_secretPost"
+            android:id="@+id/et_questionPost"
             style="@style/WritingBoardEditText"
             android:layout_width="match_parent"
             android:layout_height="334dp" />
@@ -74,7 +44,8 @@
         <Button
             android:id="@+id/btn_complete"
             style="@style/CompleteButton"
-            android:layout_gravity="end"
+            android:layout_below="@+id/et_questionPost"
+            android:layout_alignParentRight="true"
             android:layout_marginTop="16dp"/>
-    </LinearLayout>
+    </RelativeLayout>
 </LinearLayout>

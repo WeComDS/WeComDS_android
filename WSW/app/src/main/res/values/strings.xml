@@ -41,6 +41,7 @@
     <string name="complete">완료</string>
     <string name="write_secret_board">비밀게시판 글쓰기</string>
     <string name="write_study">스터디 글쓰기</string>
+
     <string name="write_message">쪽지보내기</string>
     <string name="writing_content_hint">내용을 입력하세요</string>
     <string name="writing_title_hint">제목을 입력하세요</string>
@@ -54,8 +55,15 @@
     <string name="writing_study_notice_hint">
         ex) 스터디 가능 요일, 시간대, 개발 경험 등등 스터디 참여에 필요한 다양한 질문을 해보세요.
     </string>
-
-    <string name="company">회사</string>
     <string name="study_recruitment">스터디 모집</string>
+    <string name="go_to_apply">지원하러 가기</string>
+    <string name="recruitment_closing">모집이 마감되었습니다.</string>
 
+
+    <string name="review_board">후기게시판</string>
+    <string name="write_review">후기게시판 글쓰기</string>
+    <string name="company">회사</string>
+
+    <string name="question_board">질문게시판</string>
+    <string name="write_question">질문게시판 글쓰기</string>
 </resources>

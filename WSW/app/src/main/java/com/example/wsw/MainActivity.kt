@@ -15,12 +15,12 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
         when(p0.itemId){
             R.id.menu_home ->{
                 var homeFragment = HomeFragment()
-                supportFragmentManager.beginTransaction().replace(R.id.fragment_frame,homeFragment).commit()
+                //supportFragmentManager.beginTransaction().replace(R.id.fragment_frame,homeFragment).commit()
                 return true
             }
             R.id.menu_mail ->{
                 var randomMessageFragment = RandomMessageFragment()
-                supportFragmentManager.beginTransaction().replace(R.id.fragment_frame,randomMessageFragment).commit()
+                //supportFragmentManager.beginTransaction().replace(R.id.fragment_frame,randomMessageFragment).commit()
                 return true
             }
 //            R.id.menu_groups ->{
@@ -30,10 +30,6 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
 //                return true
 //            }
 
-            /*지원이코드
-            R.id.menu_home ->{
-            homeFragment = HomeFragment.newInstance()
-            supportFragmentManager.beginTransaction().replace(R.id.fragment_frame, homeFragment).commit()*/
         }
         return false
     }
@@ -48,9 +44,5 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
 
         bottom_nav.selectedItemId = R.id.menu_home
 
-        /*    지원이 코드
-        homeFragment = HomeFragment.newInstance()
-        supportFragmentManager.beginTransaction().replace(R.id.fragment_frame, homeFragment).commit()
-        bottom_nav.setOnNavigationItemSelectedListener(onBottomNavItemSelectedListener)*/
     }
 }
