@@ -24,6 +24,19 @@
         <activity android:name=".SignupActivity" />
         <activity android:name=".LoginActivity" />
 
+
+        <activity android:name=".StudyBoardPostActivity" />
+        <activity android:name=".StudyBoardWriteActivity" />
+
+        <activity android:name=".ReviewBoardPostActivity" />
+        <activity android:name=".ReviewBoardWriteActivity" />
+
+        <activity android:name=".SecretBoardPostActivity" />
+        <activity android:name=".SecretBoardWriteActivity" />
+
+        <activity android:name=".QuestionBoardPostActivity" />
+        <activity android:name=".QuestionBoardWriteActivity" />
+
     </application>
 
 </manifest>
