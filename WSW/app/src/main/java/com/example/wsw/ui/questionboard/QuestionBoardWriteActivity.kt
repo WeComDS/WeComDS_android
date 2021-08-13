@@ -1,7 +1,8 @@
-package com.example.wsw
+package com.example.wsw.ui.questionboard
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.wsw.R
 
 class QuestionBoardWriteActivity : AppCompatActivity(){
 

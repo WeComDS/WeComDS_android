@@ -7,31 +7,31 @@
 
     <fragment
         android:id="@+id/frag_navigation_home"
-        android:name="com.example.wsw.HomeFragment"
+        android:name="com.example.wsw.ui.home.HomeFragment"
         android:label="home"
         tools:layout = "@layout/fragment_home" />
 
     <fragment
         android:id="@+id/frag_navigation_secret"
-        android:name="com.example.wsw.SecretBoardFragment"
+        android:name="com.example.wsw.ui.secretboard.SecretBoardFragment"
         android:label="secret"
         tools:layout="@layout/fragment_secret_board" />
 
     <fragment
         android:id="@+id/frag_navigation_review"
-        android:name="com.example.wsw.ReviewBoardFragment"
+        android:name="com.example.wsw.ui.reviewboard.ReviewBoardFragment"
         android:label="review"
         tools:layout="@layout/fragment_review_board" />
 
     <fragment
         android:id="@+id/frag_navigation_study"
-        android:name="com.example.wsw.StudyBoardFragment"
+        android:name="com.example.wsw.ui.studyboard.StudyBoardFragment"
         android:label="study"
         tools:layout="@layout/fragment_study_board" />
 
     <fragment
         android:id="@+id/frag_navigation_question"
-        android:name="com.example.wsw.QuestionBoardFragment"
+        android:name="com.example.wsw.ui.questionboard.QuestionBoardFragment"
         android:label="question"
         tools:layout="@layout/fragment_question_board" />
 
