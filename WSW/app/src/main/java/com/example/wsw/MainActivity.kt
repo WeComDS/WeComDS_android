@@ -30,10 +30,10 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
 //                return true
 //            }
 
-                /*지원이코드
-                R.id.menu_home ->{
-                homeFragment = HomeFragment.newInstance()
-                supportFragmentManager.beginTransaction().replace(R.id.fragment_frame, homeFragment).commit()*/
+            /*지원이코드
+            R.id.menu_home ->{
+            homeFragment = HomeFragment.newInstance()
+            supportFragmentManager.beginTransaction().replace(R.id.fragment_frame, homeFragment).commit()*/
         }
         return false
     }

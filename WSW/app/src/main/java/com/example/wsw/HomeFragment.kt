@@ -12,6 +12,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.Navigation
 import kotlinx.android.synthetic.main.fragment_home.*
 
 // TODO: Rename parameter arguments, choose names that match
@@ -43,6 +44,12 @@ class HomeFragment :Fragment(){
         val view = inflater.inflate(R.layout.fragment_home, container, false)
         Log.e("fragment","create view")
 
+        // 네비게이션 코드 ( 메인페이지 -> 마이페이지 )
+//        var img_account = view.findViewById<ImageView>(R.id.img_account)
+//        img_account.setOnClickListener {
+//            Navigation.findNavController(view).navigate(R.id.action_home_to_mypage)
+//        }
+
         return view
     }
 
@@ -56,7 +63,7 @@ class HomeFragment :Fragment(){
 
     fun init() {
 
-        val settings: SharedPreferences = activity!!.getSharedPreferences("gitcat", AppCompatActivity.MODE_PRIVATE)
+        val settings: SharedPreferences = requireActivity().getSharedPreferences("gitcat", AppCompatActivity.MODE_PRIVATE)
 
         //Notification
 
@@ -65,9 +72,9 @@ class HomeFragment :Fragment(){
         //    startActivity(intent)
         //}
 
-        img_account.setOnClickListener { view ->
-            val intent = Intent(activity, MypageFragment::class.java)
-            startActivity(intent)
-        }
+//        img_account.setOnClickListener { view ->
+//            val intent = Intent(activity, MypageFragment::class.java)
+//            startActivity(intent)
+//        }
     }
 }
