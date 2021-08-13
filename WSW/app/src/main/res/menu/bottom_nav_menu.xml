@@ -2,23 +2,23 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     >
     <item
-        android:id="@+id/menu_home"
+        android:id="@+id/frag_navigation_home"
         android:icon="@drawable/ic_home"
         android:title="home" />
     <item
-        android:id="@+id/menu_mail"
+        android:id="@+id/frag_navigation_question"
         android:icon="@drawable/ic_mail"
         android:title="@string/wsw" />
     <item
-        android:id="@+id/menu_groups"
+        android:id="@+id/frag_navigation_secret"
         android:icon="@drawable/ic_groups"
         android:title="@string/secret_board" />
     <item
-        android:id="@+id/menu_review"
+        android:id="@+id/frag_navigation_review"
         android:icon="@drawable/ic_review"
         android:title="@string/review" />
     <item
-        android:id="@+id/menu_study"
+        android:id="@+id/frag_navigation_study"
         android:icon="@drawable/ic_study"
         android:title="@string/study" />
 </menu>

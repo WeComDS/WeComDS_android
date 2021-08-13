@@ -122,6 +122,10 @@
         <item name="android:fontFamily">@font/notosanskr_medium</item>
     </style>
 
+    <style name="Text12_Bold" parent="Text12_Regular">
+        <item name="android:fontFamily">@font/notosanskr_bold</item>
+    </style>
+
     <style name="Text13_Medium" parent="Text12_Medium">
         <item name="android:textSize">13sp</item>
     </style>

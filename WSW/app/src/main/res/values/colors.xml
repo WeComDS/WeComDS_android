@@ -15,8 +15,10 @@
     <color name="main_ic_background">#FFBBC4B6</color>
 
 
+
     <color name="text_light_green">#FFBBC4B6</color>
     <color name="text_gray">#838A84</color>
+    <color name="text_green">#58734C</color>
     <color name="textColorGreen">#4F5950</color>
   
     <color name="gray_border">#BFBFBF</color>
