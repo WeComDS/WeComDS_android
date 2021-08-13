@@ -2,6 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1c0b013-2627-4eea-b56c-f26b5a28a056" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/WSW/app/src/main/res/drawable-v24/ic_big_star_off.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WSW/app/src/main/res/drawable-v24/ic_big_star_on.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WSW/app/src/main/res/drawable-v24/ic_exit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WSW/app/src/main/res/drawable/round_complete_button.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WSW/app/src/main/res/drawable/round_writing_board.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WSW/app/src/main/res/layout/fragment_message_write.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WSW/app/src/main/res/layout/fragment_review_write.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WSW/app/src/main/res/layout/fragment_secret_board_write.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WSW/app/src/main/res/layout/fragment_study_board.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WSW/app/src/main/res/layout/fragment_study_recruitment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WSW/app/src/main/res/layout/fragment_study_write.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WSW/app/src/main/res/layout/listitem_study_board.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WSW/app/src/main/res/menu/menu_study_recruitment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSW/app/src/main/java/com/example/wsw/SplashActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/WSW/app/src/main/java/com/example/wsw/SplashActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSW/app/src/main/res/layout/fragment_mypage.xml" beforeDir="false" afterPath="$PROJECT_DIR$/WSW/app/src/main/res/layout/fragment_mypage.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSW/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/WSW/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSW/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/WSW/app/src/main/res/values/strings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WSW/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/WSW/app/src/main/res/values/styles.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,6 +38,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="SvnConfiguration">
     <configuration />

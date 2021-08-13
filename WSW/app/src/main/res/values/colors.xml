@@ -6,10 +6,12 @@
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="white">#FFFAFAFA</color>
 
 
+    <color name="gray">#BFBFBF</color>
     <color name="colorPrimary">#FF58734C</color>
+    <color name="colorAccent">#4F5950</color>
     <color name="main_ic_background">#FFBBC4B6</color>
 
 

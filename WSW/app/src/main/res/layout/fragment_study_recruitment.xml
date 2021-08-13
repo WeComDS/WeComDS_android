@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout style="@style/TitleBar">
+
+        <ImageView
+            android:id="@+id/exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:paddingTop="1dp"
+            android:src="@drawable/ic_exit" />
+
+
+        <TextView
+            style="@style/TitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/exit"
+            android:includeFontPadding="false"
+            android:text="@string/study_recruitment" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_3dots_menu" />
+
+    </RelativeLayout>
+
+    <!-- 내용 -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginRight="28dp"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_studyTitle"
+                    style="@style/Text14_Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="모각코 한달 스터디 모집합니다." />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_big_star_on"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    style="@style/Text10_Regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAccent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_studyTitle"
+                    tools:text="08/10 1:44" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/TextView1"
+                    style="@style/Text12_Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="7dp"
+                    android:text="@string/study_place"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/tv_studyPlace"
+                    style="@style/Text12_Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/TextView1"
+                    android:layout_toRightOf="@+id/TextView1"
+                    android:textColor="@color/colorAccent"
+                    tools:text="대면/서울" />
+
+                <TextView
+                    android:id="@+id/TextView2"
+                    style="@style/Text12_Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/TextView1"
+                    android:text="지원현황"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    style="@style/Text12_Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/tv_studyPlace"
+                    android:layout_alignTop="@id/TextView2"
+                    android:textColor="@color/colorAccent"
+                    tools:text="1/5" />
+
+                <TextView
+                    android:id="@+id/TextView3"
+                    style="@style/Text12_Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/TextView2"
+                    android:text="모집상태"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    style="@style/Text12_Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/tv_studyPlace"
+                    android:layout_alignTop="@id/TextView3"
+                    android:textColor="@color/colorAccent"
+                    tools:text="모집중" />
+            </RelativeLayout>
+            <!-- a -->
+            <TextView
+                style="@style/Text13_Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="4dp"
+                android:text="@string/study_info_underline" />
+
+            <TextView
+                android:id="@+id/tv_studyInfo"
+                style="@style/Text12_Medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                tools:text="디스코드로 한달동안 모각코 하실 분들 모집합니다.캠은 안키셔도 되고 공부한 코드들 간단하게 공유하며 리뷰하는 시간 가질려고 합니다. 한달동안의 성췩마을 느끼고 싶으신 분 신청해주세요!" />
+
+            <TextView
+                style="@style/Text13_Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="4dp"
+                android:text="@string/study_notice_underline" />
+
+            <TextView
+                style="@style/Text12_Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                tools:text="asdfasdfasf" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="30dp"
+                android:gravity="bottom|center_horizontal">
+
+                <Button
+                    style="@style/Button"
+                    android:layout_width="170dp"
+                    android:layout_height="36dp"
+                    android:text="지원하러 가기" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

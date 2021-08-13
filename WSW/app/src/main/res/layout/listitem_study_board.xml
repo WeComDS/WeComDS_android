@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="76dp"
+    android:paddingLeft="27dp"
+    android:paddingTop="14dp"
+    android:paddingRight="22dp"
+    android:paddingBottom="13dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            style="@style/Text12_Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:layout_toRightOf="@id/img_profile_emoji"
+            android:text="@string/user_name" />
+
+        <TextView
+            android:id="@+id/tv_postDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            tools:text="10:01" />
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/tv_studyTitle"
+        style="@style/Text12_Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5dp"
+        tools:text="모각코 한 달 스터디 모집합니다" />
+
+    <TextView
+        android:id="@+id/applyTextView"
+        style="@style/Text10_BoldGreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_studyTitle"
+        android:text="지원현황"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_studyTitle"
+        android:layout_toRightOf="@id/applyTextView"
+        tools:text="1/5"/>
+
+</RelativeLayout>
