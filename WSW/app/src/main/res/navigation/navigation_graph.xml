@@ -4,10 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     app:startDestination="@id/home"
     android:id="@+id/navigation_graph">
+
     <fragment
         android:id="@+id/home"
         android:name="com.example.wsw.HomeFragment"
-        android:label="뭘..적어...?"
+        android:label="home"
         tools:layout = "@layout/fragment_home" >
 
         <action android:id="@+id/action_home_to_mypage"
@@ -17,7 +18,19 @@
     <fragment
         android:id="@+id/mypage"
         android:name="com.example.wsw.MypageFragment"
-        android:label="-_-"
+        android:label="mypage"
         tools:layout="@layout/fragment_mypage" />
+
+    <fragment
+        android:id="@+id/review"
+        android:name="com.example.wsw.ReviewBoardFragment"
+        android:label="mypage"
+        tools:layout="@layout/fragment_review_board" />
+
+    <fragment
+        android:id="@+id/study"
+        android:name="com.example.wsw.MypageFragment"
+        android:label="mypage"
+        tools:layout="@layout/fragment_study_board" />
 
 </navigation>

@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:paddingLeft="15dp"
+    android:paddingLeft="17dp"
     android:paddingTop="9dp"
     android:paddingRight="15dp"
     android:paddingBottom="10dp">
@@ -11,12 +11,12 @@
 
     <TextView
         android:id="@+id/usernameTextView"
-        style="@style/Text12_Medium"
+        style="@style/Text12_Regular"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginRight="6dp"
         android:includeFontPadding="false"
-        android:text="@string/user_name" />
+        android:text="지원자1" />
 
 
     <TextView
@@ -31,41 +31,19 @@
         android:fontFamily="@font/notosanskr_regular"
         tools:text="10:01" />
 
-    <LinearLayout
+    <TextView
+        style="@style/Text12_Regular"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:orientation="horizontal"
+        android:includeFontPadding="false"
         android:paddingTop="5dp"
         android:paddingBottom="5dp"
         android:paddingRight="7dp"
         android:paddingLeft="7dp"
-        android:background="@drawable/round_comment_option">
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_comment"/>
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="7dp"
-            android:layout_marginLeft="7dp"
-            android:src="@drawable/divider"/>
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_recommend"/>
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="7dp"
-            android:layout_marginLeft="7dp"
-            android:src="@drawable/divider"/>
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_black_3dots"/>
-    </LinearLayout>
+        android:textColor="@color/colorPrimary"
+        android:text="> 쪽지하기"/>
 
 
     <TextView
@@ -74,6 +52,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/usernameTextView"
+        android:textColor="@color/colorAccent"
         tools:text="좋은 정보 감사합니다 :)" />
 
 

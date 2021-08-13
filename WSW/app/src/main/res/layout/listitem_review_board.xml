@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="27dp"
+    android:paddingTop="14dp"
+    android:paddingRight="22dp"
+    android:paddingBottom="13dp">
+
+    <TextView
+        android:id="@+id/tv_company"
+        style="@style/Text12_Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:layout_marginBottom="4dp"
+        android:text="삼성전자"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tv_company"
+        android:layout_alignParentRight="true"
+        tools:text="10:01" />
+
+    <TextView
+        android:id="@+id/tv_contentPreview"
+        style="@style/Text12_Regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_company"
+        android:includeFontPadding="false"
+        tools:text="2021 공채 합격 후기" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_time"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/tv_contentPreview"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:src="@drawable/ic_thumb_up" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="7dp"
+            tools:text="3" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:src="@drawable/ic_comment" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="3" />
+    </LinearLayout>
+
+</RelativeLayout>

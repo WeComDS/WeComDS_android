@@ -83,6 +83,10 @@
         <item name="android:background">@drawable/round_complete_button</item>
     </style>
 
+    <style name="ButtonInActive" parent="Button">
+        <item name="android:background">@color/gray</item>
+    </style>
+
     <!-- 글쓰기 완료 버튼 -->
     <style name="CompleteButton" parent="Button">
         <item name="android:layout_width">75dp</item>
@@ -125,6 +129,12 @@
     <style name="Text14_Medium" parent="Text12_Medium">
         <item name="android:textSize">14sp</item>
     </style>
+
+    <style name="Text14_Bold" parent="Text14_Medium">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/notosanskr_bold</item>
+    </style>
+
 
     <style name="Text15_Bold">
         <item name="android:textSize">15sp</item>
