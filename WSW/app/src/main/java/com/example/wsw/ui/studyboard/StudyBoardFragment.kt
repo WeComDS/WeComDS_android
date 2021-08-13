@@ -1,4 +1,4 @@
-package com.example.wsw
+package com.example.wsw.ui.studyboard
 
 import android.content.Context
 import android.os.Bundle
@@ -6,13 +6,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.example.wsw.R
 
 class StudyBoardFragment : Fragment(){
 
     companion object{
         const val TAG: String = "StudyBoardFragment"
 
-        fun newInstance(): StudyBoardFragment{
+        fun newInstance(): StudyBoardFragment {
             return StudyBoardFragment()
         }
     }

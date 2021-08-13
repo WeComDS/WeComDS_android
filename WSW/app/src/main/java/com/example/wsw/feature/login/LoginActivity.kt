@@ -1,9 +1,10 @@
-package com.example.wsw
+package com.example.wsw.feature.login
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
+import com.example.wsw.R
 import com.example.wsw.feature.signup.SignupActivity
 
 class  LoginActivity : AppCompatActivity() {

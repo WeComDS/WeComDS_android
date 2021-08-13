@@ -1,4 +1,4 @@
-package com.example.wsw
+package com.example.wsw.ui.secretboard
 
 import android.view.View
 import android.view.ViewGroup

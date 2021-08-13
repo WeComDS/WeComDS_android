@@ -22,20 +22,20 @@
             </intent-filter>
         </activity>
         <activity android:name=".feature.signup.SignupActivity" />
-        <activity android:name=".LoginActivity" />
+        <activity android:name=".feature.login.LoginActivity" />
 
 
-        <activity android:name=".StudyBoardPostActivity" />
-        <activity android:name=".StudyBoardWriteActivity" />
+        <activity android:name=".ui.studyboard.StudyBoardPostActivity" />
+        <activity android:name=".ui.studyboard.StudyBoardWriteActivity" />
 
-        <activity android:name=".ReviewBoardPostActivity" />
-        <activity android:name=".ReviewBoardWriteActivity" />
+        <activity android:name=".ui.reviewboard.ReviewBoardPostActivity" />
+        <activity android:name=".ui.reviewboard.ReviewBoardWriteActivity" />
 
-        <activity android:name=".SecretBoardPostActivity" />
-        <activity android:name=".SecretBoardWriteActivity" />
+        <activity android:name=".ui.secretboard.post.SecretBoardPostActivity" />
+        <activity android:name=".ui.secretboard.post.SecretBoardWriteActivity" />
 
-        <activity android:name=".QuestionBoardPostActivity" />
-        <activity android:name=".QuestionBoardWriteActivity" />
+        <activity android:name=".ui.questionboard.QuestionBoardPostActivity" />
+        <activity android:name=".ui.questionboard.QuestionBoardWriteActivity" />
 
     </application>
 

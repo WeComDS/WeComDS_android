@@ -1,12 +1,14 @@
-package com.example.wsw
+package com.example.wsw.ui.studyboard
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.wsw.R
 
-class SecretBoardPostActivity: AppCompatActivity(){
+class StudyBoardWriteActivity : AppCompatActivity(){
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.fragment_secret_board_post)
+        setContentView(R.layout.fragment_study_board_write)
+
     }
 }

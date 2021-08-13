@@ -1,7 +1,8 @@
-package com.example.wsw
+package com.example.wsw.ui.reviewboard
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.wsw.R
 
 class ReviewBoardWriteActivity : AppCompatActivity(){
 

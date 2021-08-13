@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import com.example.wsw.feature.login.LoginActivity
 
 
 class SplashActivity : AppCompatActivity() {
