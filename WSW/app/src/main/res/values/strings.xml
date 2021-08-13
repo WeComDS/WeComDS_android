@@ -13,7 +13,8 @@
     <string name="study">스터디</string>
     <string name="HOT">HOT </string>
     <string name="posting">게시물</string>
-    <string name="advertise">광고</string>
+    <string name="lookwsw">“오늘 받은 편지보러가기”</string>
+    <string name="notification">알림</string>
 
 
     <!-- Mypage -->
@@ -34,7 +35,7 @@
     <string name="like">좋아요</string>
     <string name="hate">별로에요</string>
 
-
+    <!--비밀게시판-->
     <string name="user_name">익명</string>
     <string name="search_hint">검색</string>
     <string name="comment_hint">댓글을 입력하세요!</string>
@@ -42,7 +43,11 @@
     <string name="write_secret_board">비밀게시판 글쓰기</string>
     <string name="write_study">스터디 글쓰기</string>
 
+    <!--쪽지-->
+    <string name="message">쪽지</string>
     <string name="write_message">쪽지보내기</string>
+
+    <!--스터디-->
     <string name="writing_content_hint">내용을 입력하세요</string>
     <string name="writing_title_hint">제목을 입력하세요</string>
     <string name="study_title">스터디 제목</string>
@@ -58,12 +63,16 @@
     <string name="study_recruitment">스터디 모집</string>
     <string name="go_to_apply">지원하러 가기</string>
     <string name="recruitment_closing">모집이 마감되었습니다.</string>
+    <string name="to_do_apply">스터디 지원하기</string>
 
 
+    <!--후기게시판-->
     <string name="review_board">후기게시판</string>
     <string name="write_review">후기게시판 글쓰기</string>
     <string name="company">회사</string>
 
+
+    <!--질문게시판-->
     <string name="question_board">질문게시판</string>
     <string name="write_question">질문게시판 글쓰기</string>
 </resources>

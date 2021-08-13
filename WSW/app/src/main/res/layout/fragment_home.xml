@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".HomeFragment">
 
 
@@ -151,6 +151,38 @@
                     </LinearLayout>
                 </LinearLayout>
 
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="302dp"
+                    android:background="@drawable/main_border"
+                    android:layout_marginBottom="40dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:paddingRight="22dp"
+                    android:paddingLeft="22dp">
+
+                    <TextView
+                        android:id="@+id/lookwsw"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="30dp"
+                        style="@style/Text20_Gray"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lookwsw"/>
+
+                    <TextView
+                        android:layout_below="@+id/lookwsw"
+                        android:layout_centerHorizontal="true"
+                        style="@style/Text10_Regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="‘’who support whom”
+백인이 유색인종이 겪는 인종차별을 이해할 수 없고, 비장애인이 장애인이 겪는 차별을 이해할 수 없듯이,  역사적으로 여성이 겪어온 차별을 남성이 이해할수 없다.  여전히 사회구조적, 문화적으로 여성차별의 현실이 우리앞에 놓여있다.  예로부터 여성은 공학
+"/>
+
+
+                </RelativeLayout>
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -188,26 +220,7 @@
 
                 </RelativeLayout>
 
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="194dp"
-                    android:background="@drawable/main_border"
-                    android:layout_marginTop="38dp"
-                    android:layout_marginBottom="40dp"
-                    android:paddingTop="17dp"
-                    android:paddingBottom="20dp"
-                    android:paddingRight="22dp"
-                    android:paddingLeft="22dp">
 
-                    <TextView
-                        style="@style/Text15_Bold"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="#222622"
-                        android:text="@string/advertise"/>
-
-
-                </RelativeLayout>
 
             </LinearLayout>
         </ScrollView>

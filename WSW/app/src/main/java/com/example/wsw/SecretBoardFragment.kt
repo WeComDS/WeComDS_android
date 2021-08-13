@@ -9,12 +9,9 @@ import androidx.recyclerview.widget.RecyclerView
 
 class SecretBoardFragment: Fragment() {
 
-
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val view = inflater.inflate(R.layout.fragment_secret_board, container, false)
-
-        var rcv_secretBoard = view.findViewById<RecyclerView>(R.id.rcv_secretBoard)
-
+        
         return view
     }
 

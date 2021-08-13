@@ -2,35 +2,37 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    app:startDestination="@id/home"
+    app:startDestination="@id/frag_navigation_home"
     android:id="@+id/navigation_graph">
 
     <fragment
-        android:id="@+id/home"
+        android:id="@+id/frag_navigation_home"
         android:name="com.example.wsw.HomeFragment"
         android:label="home"
-        tools:layout = "@layout/fragment_home" >
-
-        <action android:id="@+id/action_home_to_mypage"
-            app:destination="@id/mypage"/>
-    </fragment>
+        tools:layout = "@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/mypage"
-        android:name="com.example.wsw.MypageFragment"
-        android:label="mypage"
-        tools:layout="@layout/fragment_mypage" />
+        android:id="@+id/frag_navigation_secret"
+        android:name="com.example.wsw.SecretBoardFragment"
+        android:label="secret"
+        tools:layout="@layout/fragment_secret_board" />
 
     <fragment
-        android:id="@+id/review"
+        android:id="@+id/frag_navigation_review"
         android:name="com.example.wsw.ReviewBoardFragment"
-        android:label="mypage"
+        android:label="review"
         tools:layout="@layout/fragment_review_board" />
 
     <fragment
-        android:id="@+id/study"
-        android:name="com.example.wsw.MypageFragment"
-        android:label="mypage"
+        android:id="@+id/frag_navigation_study"
+        android:name="com.example.wsw.StudyBoardFragment"
+        android:label="study"
         tools:layout="@layout/fragment_study_board" />
+
+    <fragment
+        android:id="@+id/frag_navigation_question"
+        android:name="com.example.wsw.QuestionBoardFragment"
+        android:label="question"
+        tools:layout="@layout/fragment_question_board" />
 
 </navigation>
