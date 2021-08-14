@@ -7,8 +7,8 @@
         android:title="home" />
     <item
         android:id="@+id/frag_navigation_question"
-        android:icon="@drawable/ic_mail"
-        android:title="@string/wsw" />
+        android:icon="@drawable/ic_question"
+        android:title="@string/question_board" />
     <item
         android:id="@+id/frag_navigation_secret"
         android:icon="@drawable/ic_groups"

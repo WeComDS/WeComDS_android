@@ -8,6 +8,6 @@ class SecretBoardPostActivity: AppCompatActivity(){
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.fragment_secret_board_post)
+        setContentView(R.layout.activity_secret_board_post)
     }
 }
