@@ -7,6 +7,7 @@
     <string name="signup">Sign Up</string>
     <string name="name">Name</string>
 
+    <!-- Home -->
     <string name="wsw">WSW</string>
     <string name="secret_board">비밀게시판</string>
     <string name="review">후기</string>
@@ -15,7 +16,9 @@
     <string name="posting">게시물</string>
     <string name="lookwsw">“오늘 받은 편지보러가기”</string>
     <string name="notification">알림</string>
-
+    <string name="twswText">‘’who support whom”
+백인이 유색인종이 겪는 인종차별을 이해할 수 없고, 비장애인이 장애인이 겪는 차별을 이해할 수 없듯이,  역사적으로 여성이 겪어온 차별을 남성이 이해할수 없다.  여전히 사회구조적, 문화적으로 여성차별의 현실이 우리앞에 놓여있다.  예로부터 여성은 공학</string>
+    <string name="wswText">똑똑 누군가 당신에게 꿀팁을 주고 간 것 같네요.<br/>확인하러 가볼까요 -></string>
 
     <!-- Mypage -->
     <string name="mypage">MYPAGE</string>

@@ -67,13 +67,13 @@
                             android:layout_height="45dp"
                             android:background="@drawable/main_ic_round_background"
                             android:padding="10dp"
-                            android:src="@drawable/ic_mail" />
+                            android:src="@drawable/ic_question" />
 
                         <TextView
                             style="@style/Text10_BoldGreen"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/wsw" />
+                            android:text="@string/question_board" />
 
 
                     </LinearLayout>
@@ -153,19 +153,19 @@
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="302dp"
+                    android:layout_height="wrap_content"
                     android:background="@drawable/main_border"
                     android:layout_marginBottom="40dp"
-                    android:paddingTop="20dp"
-                    android:paddingBottom="20dp"
-                    android:paddingRight="22dp"
-                    android:paddingLeft="22dp">
+                    android:gravity="center_horizontal"
+                    android:paddingTop="17dp"
+                    android:paddingBottom="17dp">
 
                     <TextView
                         android:id="@+id/lookwsw"
                         android:layout_alignParentTop="true"
                         android:layout_centerHorizontal="true"
-                        android:layout_marginBottom="30dp"
+                        android:layout_marginBottom="10dp"
+                        android:includeFontPadding="false"
                         style="@style/Text20_Gray"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -177,9 +177,8 @@
                         style="@style/Text10_Regular"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="‘’who support whom”
-백인이 유색인종이 겪는 인종차별을 이해할 수 없고, 비장애인이 장애인이 겪는 차별을 이해할 수 없듯이,  역사적으로 여성이 겪어온 차별을 남성이 이해할수 없다.  여전히 사회구조적, 문화적으로 여성차별의 현실이 우리앞에 놓여있다.  예로부터 여성은 공학
-"/>
+                        android:gravity="center_horizontal"
+                        android:text="@string/wswText" />
 
 
                 </RelativeLayout>

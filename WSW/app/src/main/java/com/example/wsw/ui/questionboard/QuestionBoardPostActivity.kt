@@ -8,7 +8,7 @@ class QuestionBoardPostActivity : AppCompatActivity(){
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.fragment_question_board_post)
+        setContentView(R.layout.activity_question_board_post)
 
     }
 }
