@@ -181,6 +181,7 @@
                 android:gravity="bottom|center_horizontal">
 
                 <Button
+                    android:id="@+id/btn_apply"
                     style="@style/Button"
                     android:layout_width="170dp"
                     android:layout_height="36dp"
