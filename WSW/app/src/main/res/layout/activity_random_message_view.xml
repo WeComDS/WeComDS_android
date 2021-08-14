@@ -51,6 +51,7 @@
                 android:layout_height="match_parent"
                 android:gravity="center">
                 <Button
+                    android:id="@+id/btn_evaluation"
                     android:layout_width="170dp"
                     android:layout_height="45dp"
                     android:layout_gravity="bottom"
