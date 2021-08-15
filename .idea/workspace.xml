@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1c0b013-2627-4eea-b56c-f26b5a28a056" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/WeComDS_android.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/WeComDS_android.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,7 +21,10 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/WSW" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -42,6 +44,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="845" y="381" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1628856279158" />
+    <state x="95" y="0" key="#Project_Structure" timestamp="1628941363709">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="95" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1628941363709" />
     <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1628856310764">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

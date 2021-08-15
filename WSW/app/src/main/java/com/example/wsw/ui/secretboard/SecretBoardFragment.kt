@@ -16,7 +16,7 @@ class SecretBoardFragment: Fragment() {
         val view = LayoutInflater.from(activity).inflate(R.layout.fragment_secret_board, container,false)
 
         clickFab(view)
-
+       
         return view
     }
 

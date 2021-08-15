@@ -65,6 +65,20 @@
         <item name="android:src">@drawable/ic_scrap_green</item>
     </style>
 
+    <!-- 추천, 스크랩 눌렀을때 아이콘 -->
+    <style name="SelectedReccomendIcon" >
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">17dp</item>
+        <item name="android:background">@drawable/round_recommend_scrap_selected</item>
+        <item name="android:src">@drawable/ic_recommend_white</item>
+    </style>
+    <style name="SelectedScrapIcon">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">17dp</item>
+        <item name="android:background">@drawable/round_recommend_scrap_selected</item>
+        <item name="android:src">@drawable/ic_scrap_white</item>
+    </style>
+
     <!-- 글쓰기 보드 -->
     <style name="WritingBoardEditText" parent="Text12_Regular">
         <item name="android:background">@drawable/round_writing_board</item>
@@ -92,6 +106,14 @@
         <item name="android:layout_width">75dp</item>
         <item name="android:layout_height">27dp</item>
         <item name="android:background">@drawable/round_complete_button</item>
+        <item name="android:text">@string/complete</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <!-- 글쓰기 완료 버튼 클릭시 -->
+    <style name="CompleteButtonSelected" parent="Button">
+        <item name="android:layout_width">75dp</item>
+        <item name="android:layout_height">27dp</item>
+        <item name="android:background">@drawable/round_complete_button_selected</item>
         <item name="android:text">@string/complete</item>
         <item name="android:includeFontPadding">false</item>
     </style>
