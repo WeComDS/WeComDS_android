@@ -1,16 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mypage"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MypageFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <RelativeLayout style="@style/TitleBar" >
+        <RelativeLayout
+            android:id="@+id/topBar"
+            style="@style/TitleBar"
+            android:gravity="center_vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -27,20 +34,6 @@
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@+id/back"/>
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_toLeftOf="@+id/img_account"
-                android:src="@drawable/ic_notifications" />
-
-
-            <ImageView
-                android:id="@+id/img_account"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_marginLeft="16dp"
-                android:src="@drawable/ic_account" />
         </RelativeLayout>
 
         <ScrollView
@@ -71,6 +64,7 @@
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:id="@+id/gotoScrab"
                     android:layout_width="match_parent"
                     android:layout_height="88dp"
                     android:layout_marginTop="15dp"
@@ -85,6 +79,7 @@
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:id="@+id/gotoStudyList"
                     android:layout_width="match_parent"
                     android:layout_height="88dp"
                     android:layout_marginTop="15dp"
@@ -99,6 +94,7 @@
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:id="@+id/gotoMessage"
                     android:layout_width="match_parent"
                     android:layout_height="88dp"
                     android:layout_marginTop="15dp"
@@ -176,4 +172,4 @@
 
     </LinearLayout>
 
-</FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
