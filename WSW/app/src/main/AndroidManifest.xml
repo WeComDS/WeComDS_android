@@ -21,6 +21,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".ui.home.mypage.MypageActivity"/>
+        <activity android:name=".ui.home.mypage.message.MessageActivity"/>
+        <activity android:name=".ui.home.mypage.scrab.ScrabActivity"/>
+        <activity android:name=".ui.home.mypage.studylist.StudylistActivity"/>
+        <activity android:name=".ui.home.NotificationActivity"/>
+
+
         <activity android:name=".feature.signup.SignupActivity" />
         <activity android:name=".feature.login.LoginActivity" />
 
