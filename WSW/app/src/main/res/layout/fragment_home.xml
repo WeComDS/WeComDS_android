@@ -162,14 +162,14 @@
 
                     <TextView
                         android:id="@+id/lookwsw"
+                        style="@style/Text20_Gray"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_alignParentTop="true"
                         android:layout_centerHorizontal="true"
                         android:layout_marginBottom="10dp"
                         android:includeFontPadding="false"
-                        style="@style/Text20_Gray"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/lookwsw"/>
+                        android:text="@string/lookwsw" />
 
                     <TextView
                         android:layout_below="@+id/lookwsw"
@@ -214,8 +214,8 @@
                         android:id="@+id/listview_hotposting"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="22dp"
-                        android:layout_alignBaseline="@+id/hotTextView"/>
+                        android:layout_alignBaseline="@+id/hotTextView"
+                        android:layout_marginTop="22dp" />
 
                 </RelativeLayout>
 
