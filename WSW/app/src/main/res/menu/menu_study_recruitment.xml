@@ -3,4 +3,7 @@
     <item
         android:id="@+id/menu1"
         android:title="삭제하기"/>
+    <item
+        android:id="@+id/menu2"
+        android:title="쪽지보내기"/>
 </menu>

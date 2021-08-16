@@ -7,7 +7,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.RecyclerView
 import com.example.wsw.R
+import com.example.wsw.ui.questionboard.QuestionBoardAdapter
 import com.example.wsw.ui.secretboard.post.SecretBoardWriteActivity
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
@@ -17,6 +19,12 @@ class StudyBoardFragment : Fragment(){
         val view = LayoutInflater.from(activity).inflate(R.layout.fragment_study_board, container,false)
 
         clickFab(view)
+
+        //Adapter연결 : 태영
+        val adapter = StudyBoardAdapter()
+        val rcv_studyBoard = view!!.findViewById<RecyclerView>(R.id.rcv_studyBoard)
+        rcv_studyBoard.adapter = adapter
+
         return view
 
     }

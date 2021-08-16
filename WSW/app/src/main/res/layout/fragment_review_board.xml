@@ -38,6 +38,7 @@
         app:layout_constraintBottom_toBottomOf="parent">
 
 
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -62,6 +63,7 @@
                 android:id="@+id/rcv_reviewBoard"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                 tools:listitem="@layout/listitem_review_board"/>
 
 

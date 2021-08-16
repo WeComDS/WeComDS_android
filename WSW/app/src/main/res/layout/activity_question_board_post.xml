@@ -28,6 +28,7 @@
             android:text="@string/question_board" />
 
         <ImageView
+            android:id="@+id/question_Three_dots"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"

@@ -10,10 +10,17 @@
         <entry key="..\:/2021_Light_It_Up/WeComDS_android/WSW/app/src/main/res/layout/activity_message_list.xml" value="0.33061594202898553" />
         <entry key="..\:/2021_Light_It_Up/WeComDS_android/WSW/app/src/main/res/layout/activity_notification.xml" value="0.17755825734549138" />
         <entry key="..\:/2021_Light_It_Up/WeComDS_android/WSW/app/src/main/res/layout/activity_question_board_post.xml" value="0.33061594202898553" />
+        <entry key="..\:/2021_Light_It_Up/WeComDS_android/WSW/app/src/main/res/layout/activity_question_board_write.xml" value="0.1816123188405797" />
+        <entry key="..\:/2021_Light_It_Up/WeComDS_android/WSW/app/src/main/res/layout/activity_random_message.xml" value="0.21105072463768115" />
         <entry key="..\:/2021_Light_It_Up/WeComDS_android/WSW/app/src/main/res/layout/activity_review_board_post.xml" value="0.33061594202898553" />
+        <entry key="..\:/2021_Light_It_Up/WeComDS_android/WSW/app/src/main/res/layout/activity_review_board_write.xml" value="0.21105072463768115" />
         <entry key="..\:/2021_Light_It_Up/WeComDS_android/WSW/app/src/main/res/layout/activity_scrab.xml" value="0.33061594202898553" />
+        <entry key="..\:/2021_Light_It_Up/WeComDS_android/WSW/app/src/main/res/layout/activity_secret_board_post.xml" value="0.21105072463768115" />
         <entry key="..\:/2021_Light_It_Up/WeComDS_android/WSW/app/src/main/res/layout/activity_secret_board_write.xml" value="0.33061594202898553" />
         <entry key="..\:/2021_Light_It_Up/WeComDS_android/WSW/app/src/main/res/layout/activity_signup.xml" value="0.33061594202898553" />
+        <entry key="..\:/2021_Light_It_Up/WeComDS_android/WSW/app/src/main/res/layout/activity_splash.xml" value="0.21105072463768115" />
+        <entry key="..\:/2021_Light_It_Up/WeComDS_android/WSW/app/src/main/res/layout/activity_study_board_post.xml" value="0.22" />
+        <entry key="..\:/2021_Light_It_Up/WeComDS_android/WSW/app/src/main/res/layout/activity_study_board_write.xml" value="0.21105072463768115" />
         <entry key="..\:/2021_Light_It_Up/WeComDS_android/WSW/app/src/main/res/layout/dialog_random_message.xml" value="0.33061594202898553" />
         <entry key="..\:/2021_Light_It_Up/WeComDS_android/WSW/app/src/main/res/layout/dialog_study_apply.xml" value="0.33061594202898553" />
         <entry key="..\:/2021_Light_It_Up/WeComDS_android/WSW/app/src/main/res/layout/fragment_home.xml" value="0.33" />
@@ -22,11 +29,22 @@
         <entry key="..\:/2021_Light_It_Up/WeComDS_android/WSW/app/src/main/res/layout/fragment_question_board.xml" value="0.33061594202898553" />
         <entry key="..\:/2021_Light_It_Up/WeComDS_android/WSW/app/src/main/res/layout/fragment_random_message.xml" value="0.33061594202898553" />
         <entry key="..\:/2021_Light_It_Up/WeComDS_android/WSW/app/src/main/res/layout/fragment_random_message_view.xml" value="0.33061594202898553" />
+        <entry key="..\:/2021_Light_It_Up/WeComDS_android/WSW/app/src/main/res/layout/fragment_review_board.xml" value="0.1" />
+        <entry key="..\:/2021_Light_It_Up/WeComDS_android/WSW/app/src/main/res/layout/fragment_secret_board.xml" value="0.17806484295845998" />
+        <entry key="..\:/2021_Light_It_Up/WeComDS_android/WSW/app/src/main/res/layout/fragment_study_board.xml" value="0.25" />
+        <entry key="..\:/2021_Light_It_Up/WeComDS_android/WSW/app/src/main/res/layout/layout_study_apply_comment.xml" value="0.31302083333333336" />
+        <entry key="..\:/2021_Light_It_Up/WeComDS_android/WSW/app/src/main/res/layout/listitem_apply_comment.xml" value="0.31302083333333336" />
+        <entry key="..\:/2021_Light_It_Up/WeComDS_android/WSW/app/src/main/res/layout/listitem_apply_study.xml" value="0.21105072463768115" />
+        <entry key="..\:/2021_Light_It_Up/WeComDS_android/WSW/app/src/main/res/layout/listitem_comment.xml" value="0.16875" />
+        <entry key="..\:/2021_Light_It_Up/WeComDS_android/WSW/app/src/main/res/layout/listitem_message.xml" value="0.31302083333333336" />
+        <entry key="..\:/2021_Light_It_Up/WeComDS_android/WSW/app/src/main/res/layout/listitem_message_all.xml" value="0.16875" />
         <entry key="..\:/2021_Light_It_Up/WeComDS_android/WSW/app/src/main/res/layout/listitem_notify.xml" value="0.33061594202898553" />
         <entry key="..\:/2021_Light_It_Up/WeComDS_android/WSW/app/src/main/res/layout/listitem_question_board.xml" value="0.33061594202898553" />
         <entry key="..\:/2021_Light_It_Up/WeComDS_android/WSW/app/src/main/res/layout/listitem_randommessage.xml" value="0.33061594202898553" />
         <entry key="..\:/2021_Light_It_Up/WeComDS_android/WSW/app/src/main/res/layout/listitem_review_board.xml" value="0.33061594202898553" />
         <entry key="..\:/2021_Light_It_Up/WeComDS_android/WSW/app/src/main/res/layout/listitem_scrap.xml" value="0.33061594202898553" />
+        <entry key="..\:/2021_Light_It_Up/WeComDS_android/WSW/app/src/main/res/layout/listitem_secret_board.xml" value="0.31302083333333336" />
+        <entry key="..\:/2021_Light_It_Up/WeComDS_android/WSW/app/src/main/res/layout/listitem_study_board.xml" value="0.31302083333333336" />
         <entry key="..\:/2021_Light_It_Up/WeComDS_android/WSW/app/src/main/res/menu/bottom_nav_menu.xml" value="0.2898148148148148" />
         <entry key="..\:/2021_Light_It_Up/WeComDS_android/WSW/app/src/main/res/menu/menu_study_recruitment.xml" value="0.3111111111111111" />
       </map>
