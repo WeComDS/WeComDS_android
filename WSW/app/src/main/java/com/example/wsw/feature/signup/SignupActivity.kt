@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
+import androidx.core.content.ContextCompat
 import com.example.wsw.feature.login.LoginActivity
 import com.example.wsw.R
 
@@ -16,6 +17,10 @@ class SignupActivity : AppCompatActivity() {
         login_below.setOnClickListener{
             var intent = Intent(applicationContext, LoginActivity::class.java)
             startActivity(intent)
+
+            login_below.setTextColor(ContextCompat.getColor(this, R.color.black))
         }
+
+
     }
 }

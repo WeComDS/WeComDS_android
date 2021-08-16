@@ -12,10 +12,15 @@ import com.example.wsw.ui.questionboard.QuestionBoardAdapter
 import com.example.wsw.ui.secretboard.post.SecretBoardWriteActivity
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
-class SecretBoardFragment: Fragment() {
+class SecretBoardFragment : Fragment() {
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        val view = LayoutInflater.from(activity).inflate(R.layout.fragment_secret_board, container,false)
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        val view =
+            LayoutInflater.from(activity).inflate(R.layout.fragment_secret_board, container, false)
 
         clickFab(view)
 

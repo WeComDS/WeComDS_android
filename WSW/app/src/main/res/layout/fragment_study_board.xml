@@ -64,8 +64,6 @@
                 android:layout_height="match_parent"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                 tools:listitem="@layout/listitem_study_board"/>
-
-
         </LinearLayout>
 
     </ScrollView>

@@ -15,7 +15,6 @@
             android:paddingTop="1dp"
             android:src="@drawable/ic_exit" />
 
-
         <TextView
             style="@style/TitleText"
             android:layout_width="wrap_content"
@@ -158,7 +157,9 @@
 
 
             <Button
+                android:id="@+id/btn_complete"
                 style="@style/CompleteButton"
+                android:layout_height="12dp"
                 android:layout_gravity="end"
                 android:layout_marginTop="12dp" />
         </LinearLayout>

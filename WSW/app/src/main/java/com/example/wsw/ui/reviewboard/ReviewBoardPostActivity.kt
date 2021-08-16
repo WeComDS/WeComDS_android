@@ -5,9 +5,10 @@ import android.util.Log
 import android.widget.ImageView
 import android.widget.PopupMenu
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import com.example.wsw.R
 
-class ReviewBoardPostActivity : AppCompatActivity(){
+class ReviewBoardPostActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -35,6 +36,21 @@ class ReviewBoardPostActivity : AppCompatActivity(){
                     }
 
                 }
+            }
+
+            var btn_recommend = findViewById<ImageView>(R.id.btn_recommend)
+
+            btn_recommend.setOnClickListener {
+                btn_recommend.setImageResource(R.drawable.ic_recommend_white)
+                btn_recommend.background =
+                    ContextCompat.getDrawable(this, R.drawable.round_recommend_scrap_selected)
+            }
+            var btn_scrap = findViewById<ImageView>(R.id.btn_scrap)
+            btn_scrap.setOnClickListener {
+                btn_scrap.setImageResource(R.drawable.ic_scrap_white)
+                btn_scrap.background =
+                    ContextCompat.getDrawable(this, R.drawable.round_recommend_scrap_selected)
+
             }
         }
     }
