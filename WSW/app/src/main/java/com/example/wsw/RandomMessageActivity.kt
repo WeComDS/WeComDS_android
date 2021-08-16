@@ -9,7 +9,9 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
+import kotlinx.android.synthetic.main.activity_mypage.*
 import kotlinx.android.synthetic.main.activity_random_message.*
+import kotlinx.android.synthetic.main.activity_random_message.back
 
 class RandomMessageActivity : AppCompatActivity(){
 
@@ -22,6 +24,15 @@ class RandomMessageActivity : AppCompatActivity(){
         random_message.setOnClickListener { view ->
             val intent=Intent(this,RandomMessageViewActivity::class.java)
             startActivity(intent)
+        }
+        backBtn()
+
+    }
+
+    /* 뒤로가기 화살표 클릭 리스너 */
+    fun backBtn(){
+        back.setOnClickListener {
+            finish()
         }
     }
 }
