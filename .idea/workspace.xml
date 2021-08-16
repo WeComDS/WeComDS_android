@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="a1c0b013-2627-4eea-b56c-f26b5a28a056" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -26,6 +34,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -39,6 +48,8 @@
     </task>
     <servers />
   </component>
+<<<<<<< HEAD
+=======
   <component name="WindowStateProjectService">
     <state x="845" y="381" key="#Notifications" timestamp="1628856279158">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -53,4 +64,5 @@
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1628856310764" />
   </component>
+>>>>>>> 1a464a664bd04b827ed4abf03f5450b4906ca330
 </project>

@@ -28,6 +28,7 @@
             android:text="@string/question_board" />
 
         <ImageView
+            android:id="@+id/question_Three_dots"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
@@ -88,8 +89,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="17dp"
-                    android:paddingTop="17dp"
                     android:includeFontPadding="false"
+                    android:paddingTop="17dp"
                     tools:text="공학 여대\n생을 위한 \n바옹ㅁ니아럼;\n니아러;ㅁ니아ㅓㄹ" />
 
                 <RelativeLayout

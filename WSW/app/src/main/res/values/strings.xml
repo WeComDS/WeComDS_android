@@ -78,4 +78,5 @@
     <!--질문게시판-->
     <string name="question_board">질문게시판</string>
     <string name="write_question">질문게시판 글쓰기</string>
+
 </resources>
