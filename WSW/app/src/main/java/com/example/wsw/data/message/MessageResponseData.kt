@@ -1,3 +1,5 @@
 package com.example.wsw.data.message
 
-//data class MessageResponseData()
+data class MessageResponseData(
+        val ss:String
+)
