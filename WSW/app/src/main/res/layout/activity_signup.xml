@@ -98,7 +98,7 @@
         </RelativeLayout>
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/signup"
+            android:id="@+id/btn_signup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/input_login"
@@ -114,7 +114,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/signup"
+            android:layout_below="@id/btn_signup"
             android:layout_marginTop="11dp"
             android:gravity="center">
 
