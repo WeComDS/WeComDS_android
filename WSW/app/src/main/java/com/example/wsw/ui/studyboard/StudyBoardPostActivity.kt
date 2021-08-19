@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.example.wsw.R
 import com.example.wsw.RandomMessageDialogFragment
+import kotlinx.android.synthetic.main.activity_secret_board_post.*
 import kotlinx.android.synthetic.main.activity_study_board_post.*
 
 class StudyBoardPostActivity : AppCompatActivity() {
@@ -60,6 +61,8 @@ class StudyBoardPostActivity : AppCompatActivity() {
                 btn_scrap.background =
                     ContextCompat.getDrawable(this, R.drawable.round_recommend_scrap_selected)
             }
+            backBtn()
+
         }
     }
     private fun setPostText(){
@@ -73,5 +76,14 @@ class StudyBoardPostActivity : AppCompatActivity() {
     private fun setDialog() {
         val dialog = ApplyDialogFragment()
         dialog.show(supportFragmentManager, "ApplyDialogFragment")
+    }
+
+
+
+    /* 뒤로가기 화살표 클릭 리스너 */
+    fun backBtn(){
+        back.setOnClickListener {
+            finish()
+        }
     }
 }

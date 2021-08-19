@@ -24,7 +24,7 @@ interface ApiService {
                         @Field("user_pw") user_pw: String,
                         @Field("user_check") user_check: Int): Call<Boolean>
 
-
+    //메시지
     @GET("message/readAll")
     fun requestMessage(): Call<List<MessageListData>>
 
@@ -37,7 +37,7 @@ interface ApiService {
                      @Field("mes_sendID")mes_sendID: String,
                      @Field("mes_receiveID")mes_receiveID: String,
                      @Field("mes_date")mes_date: String,
-                     @Field("mes_content")mes_content: String): Call<MessageListData>
+                     @Field("mes_content")mes_content: String): Call<Boolean>
 
     /* 랜덤 메세지 */
     @FormUrlEncoded

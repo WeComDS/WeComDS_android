@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.wsw.R
 import com.example.wsw.api.ApiServicempl
 import com.example.wsw.feature.signup.SignupActivity
+import kotlinx.android.synthetic.main.activity_mypage.*
 import retrofit2.Call
 import retrofit2.Response
 import javax.security.auth.callback.Callback
@@ -76,6 +77,13 @@ class SecretBoardPostActivity : AppCompatActivity() {
             btn_recommend.setBackgroundResource(R.drawable.round_recommend_scrap_selected)
         }
 
+        backBtn()
+    }
 
+    /* 뒤로가기 화살표 클릭 리스너 */
+    fun backBtn(){
+        back.setOnClickListener {
+            finish()
+        }
     }
 }
