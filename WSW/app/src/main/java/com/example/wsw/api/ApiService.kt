@@ -1,10 +1,8 @@
 package com.example.wsw.api
 
 
+import com.example.wsw.data.*
 import com.example.wsw.data.messagelist.MessageListData
-import com.example.wsw.data.SecretListGetData
-import com.example.wsw.data.LoginResponseData
-import com.example.wsw.data.StudyListGetData
 import retrofit2.Call
 import retrofit2.http.*
 
@@ -65,6 +63,14 @@ interface ApiService {
 
     @DELETE("secret/delete/{id}")
     fun deleteSecretPost(@Path("id") id: Int): Call<Void>
+
+    //질문게시판
+    @GET("/question")
+    fun questionList():Call<ArrayList<questionListGetData>>
+
+    //리뷰게시판
+    @GET("/review")
+    fun reviewList():Call<ArrayList<reviewListGetData>>
 
     //스터디게시판 전체호출
     @GET("/study")
