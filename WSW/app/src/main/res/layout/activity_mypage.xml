@@ -54,12 +54,18 @@
                     android:layout_marginTop="15dp"
                     android:background="@drawable/gray_border">
 
-
                     <TextView
+                        android:id="@+id/tv_company"
                         style="@style/Text17_Bold_Green"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/group" />
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="김덕성"
+                        android:layout_below="@id/tv_company"/>
 
                 </RelativeLayout>
 

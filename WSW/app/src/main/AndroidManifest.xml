@@ -39,7 +39,7 @@
 
         <activity android:name=".RandomMessageActivity"/>
         <activity android:name=".RandomMessageViewActivity"/>
-
+        <activity android:name=".RandomMessageWriteActivity" />
 
 
         <activity android:name=".ui.studyboard.StudyBoardPostActivity" />
