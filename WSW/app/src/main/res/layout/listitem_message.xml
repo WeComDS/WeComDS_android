@@ -15,7 +15,7 @@
         android:layout_marginTop="11dp"
         android:text="받은쪽지"
         android:textColor="#388CDA"
-        style="@style/Text12_Medium"
+        style="@style/Text14_Medium"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
 

@@ -16,7 +16,7 @@ import com.example.wsw.R
 import com.example.wsw.RandomMessageActivity
 import com.example.wsw.ui.home.mypage.MypageActivity
 
-class HomeFragment :Fragment(){
+class  HomeFragment :Fragment(){
 
     companion object{
         const val TAG: String = "HomeFragment"

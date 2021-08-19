@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.wsw">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -18,17 +19,19 @@
         <activity
             android:name=".SplashActivity"
             android:theme="@style/SplashTheme">
-        </activity>
-        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MainActivity">
+        </activity>
 
         <activity android:name=".ui.home.mypage.MypageActivity"/>
         <activity android:name=".ui.home.mypage.message.MessageActivity"/>
+        <activity android:name=".ui.home.mypage.message.MessageListActivity"/>
+        <activity android:name=".ui.home.mypage.message.MessageWriteActivity"/>
         <activity android:name=".ui.home.mypage.scrab.ScrabActivity"/>
         <activity android:name=".ui.home.mypage.studylist.StudylistActivity"/>
         <activity android:name=".ui.home.NotificationActivity"/>
