@@ -11,6 +11,8 @@ import android.widget.Button
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.wsw.api.ApiServicempl
+import com.example.wsw.ui.questionboard.QuestionBoardWriteActivity
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import kotlinx.android.synthetic.main.activity_mypage.*
 import kotlinx.android.synthetic.main.activity_random_message.*
 import kotlinx.android.synthetic.main.activity_random_message.back
@@ -45,10 +47,18 @@ class RandomMessageActivity : AppCompatActivity(){
                     })
 
         }
+        var fab_write = findViewById<FloatingActionButton>(R.id.fab_write)
+        clickFab(fab_write)
         backBtn()
 
     }
-
+    private fun clickFab(view: View) {
+        val fab_write = view.findViewById<FloatingActionButton>(R.id.fab_write)
+        fab_write.setOnClickListener {
+            var intent = Intent(view.context, RandomMessageWriteActivity::class.java)
+            startActivity(intent)
+        }
+    }
     /* 뒤로가기 화살표 클릭 리스너 */
     fun backBtn(){
         back.setOnClickListener {

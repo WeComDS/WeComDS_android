@@ -47,6 +47,7 @@
                 android:text="@string/study_title" />
 
             <EditText
+                android:id="@+id/et_studyTitle"
                 style="@style/Text12_Regular"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -78,6 +79,7 @@
                     android:orientation="horizontal">
 
                     <RadioButton
+                        android:id="@+id/radio_online"
                         style="@style/Text12_Regular"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -86,6 +88,7 @@
                         android:textColor="@color/colorAccent" />
 
                     <RadioButton
+                        android:id="@+id/radio_offline"
                         style="@style/Text12_Regular"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -117,6 +120,7 @@
                     android:layout_marginRight="10dp"
                     android:text="모집인원"/>
                 <EditText
+                    android:id="@+id/et_headcount"
                     android:layout_width="41dp"
                     android:layout_height="wrap_content"/>
                 <TextView
@@ -134,9 +138,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="11dp"
                 android:layout_marginBottom="5dp"
-                android:text="@string/study_notice" />
+                android:text="스터디 소개 및 지원 방식" />
 
             <EditText
+                android:id="@+id/et_studyInfo"
                 style="@style/WritingBoardEditText"
                 android:layout_width="match_parent"
                 android:layout_height="145dp" />
@@ -151,6 +156,7 @@
                 android:text="@string/study_notice" />
 
             <EditText
+                android:id="@+id/et_studyNotice"
                 style="@style/WritingBoardEditText"
                 android:layout_width="match_parent"
                 android:layout_height="145dp" />
@@ -159,9 +165,10 @@
             <Button
                 android:id="@+id/btn_complete"
                 style="@style/CompleteButton"
-                android:layout_height="12dp"
+                android:layout_height="23dp"
                 android:layout_gravity="end"
-                android:layout_marginTop="12dp" />
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="20dp"/>
         </LinearLayout>
     </ScrollView>
 

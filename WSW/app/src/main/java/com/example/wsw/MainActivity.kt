@@ -11,6 +11,7 @@ import com.example.wsw.ui.secretboard.SecretBoardFragment
 import com.example.wsw.ui.studyboard.StudyBoardFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
+
 class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemSelectedListener {
 
 
@@ -70,6 +71,7 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
         }
         return true
     }
+
 
 
 }
