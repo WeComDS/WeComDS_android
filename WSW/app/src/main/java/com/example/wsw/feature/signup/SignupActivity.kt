@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
+import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.core.content.ContextCompat
@@ -20,6 +21,11 @@ class SignupActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_signup)
 
+        var name = findViewById<EditText>(R.id.name)
+        var email = findViewById<EditText>(R.id.email)
+        var password = findViewById<EditText>(R.id.password)
+
+
         var login_below = findViewById<TextView>(R.id.login_below)
         login_below.setOnClickListener{
             var intent = Intent(applicationContext, LoginActivity::class.java)
@@ -32,7 +38,8 @@ class SignupActivity : AppCompatActivity() {
 
         var btn_signup = findViewById<Button>(R.id.btn_signup)
         btn_signup.setOnClickListener {
-            ApiServicempl.api.requestRegister("1","2","3",1)
+
+            ApiServicempl.api.requestRegister(name.text.toString(),email.text.toString(),password.text.toString(),1)
                     .enqueue(object :retrofit2.Callback<Boolean>{
                         override fun onResponse(call: Call<Boolean>, response: Response<Boolean>) {
                             if (response.body() == true) {

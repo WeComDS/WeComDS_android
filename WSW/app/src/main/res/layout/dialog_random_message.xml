@@ -32,15 +32,14 @@
     </RelativeLayout>
     <View
         android:id="@+id/view"
-        android:layout_width="match_parent"
+        android:layout_width="227dp"
         android:layout_height="1dp"
         android:background="#FFFFFF"
         android:layout_below="@id/randommsg_dialog" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/randommsg_dialog">
+        android:layout_height="wrap_content">
 
         <TextView
             style="@style/Text15_Bold"
@@ -63,22 +62,19 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:paddingBottom="15dp"
         android:paddingLeft="33dp">
         <ImageButton
             android:id="@+id/btn_like"
             android:layout_height="50dp"
             android:layout_width="50dp"
-            android:onClick="emojiClicked"
             android:background="@drawable/sentiment_satisfied"
             android:gravity="center"/>
 
         <ImageButton
-            android:id="@+id/btn_hate"
+            android:id="@+id/btn_dislike"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:onClick="emojiClicked"
             android:background="@drawable/sentiment_dissatisfied"
             android:gravity="center"
             android:layout_marginLeft="63dp"/>

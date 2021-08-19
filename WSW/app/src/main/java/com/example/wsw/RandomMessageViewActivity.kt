@@ -1,7 +1,10 @@
 package com.example.wsw
 
 import android.os.Bundle
+import android.util.Log
+import android.view.WindowManager
 import android.widget.Button
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_mypage.*
 
@@ -15,6 +18,7 @@ class RandomMessageViewActivity :AppCompatActivity(){
             setDialog()
         }
 
+        setRandomMessage()
         backBtn()
 
     }
@@ -24,6 +28,11 @@ class RandomMessageViewActivity :AppCompatActivity(){
         back.setOnClickListener {
             finish()
         }
+    }
+
+    private fun setRandomMessage(){
+        var tv_message = findViewById<TextView>(R.id.tv_message)
+        tv_message.text  = intent.getStringExtra("message")
     }
 
     private fun setDialog(){

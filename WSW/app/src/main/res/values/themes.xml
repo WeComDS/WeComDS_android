@@ -3,17 +3,19 @@
     <style name="Theme.WSW" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
-         Primary brand color.
+         <!--Primary brand color.-->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorAccent">#4F5950</item>
         <item name="colorOnPrimary">@color/white</item>
-         Secondary brand color.
+        <!--Secondary brand color.-->
         <item name="colorSecondary">@color/teal_200</item>
         <item name="colorSecondaryVariant">@color/teal_700</item>
         <item name="colorOnSecondary">@color/black</item>
-         Status bar color.
+        <!--Status bar color.-->
         <item name="android:statusBarColor" tools:targetApi="l">@color/colorPrimary</item>
-        <!-- Customize your theme here. -->
+
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
     </style>
     <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
         <item name="windowActionBar">false</item>
