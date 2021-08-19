@@ -22,7 +22,6 @@ import java.text.SimpleDateFormat
 import java.util.*
 import kotlin.collections.ArrayList
 
-
 class SecretBoardAdapter(val context: Context, val secret_list:ArrayList<SecretListGetData>) : RecyclerView.Adapter<SecretBoardAdapter.SecretBoardViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SecretBoardViewHolder {
@@ -43,6 +42,24 @@ class SecretBoardAdapter(val context: Context, val secret_list:ArrayList<SecretL
         return secret_list.size
     }
 
+    fun imakeformat(date:String):String{
+        //date를 받아온다
+        var date = date
+
+        //요일
+        var MM = date.substring(5,7)
+        var DD = date.substring(8,10)
+
+        //시간
+        var h = date.substring(11,13)
+        var m = date.substring(14,16)
+
+        //완성
+        var complete = MM+"/"+DD+" "+h+":"+m
+
+        return complete
+    }
+
     inner class SecretBoardViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
         val secret_content = itemView.findViewById<TextView>(R.id.tv_contentPreview)
         val secret_like = itemView.findViewById<TextView>(R.id.tv_secret_like)
@@ -53,7 +70,7 @@ class SecretBoardAdapter(val context: Context, val secret_list:ArrayList<SecretL
             secret_content.text = sitem.sec_content
             secret_like.text = sitem.sec_like.toString()
             secret_comm.text = sitem.sec_CMcount.toString()
-            secret_date.text = sitem.sec_date
+            secret_date.text = imakeformat(sitem.sec_date)
         }
     }
 }
