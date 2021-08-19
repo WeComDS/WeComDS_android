@@ -8,15 +8,15 @@ class PreferenceUtil(context: Context) {
     private val prefs: SharedPreferences
     = context.getSharedPreferences("pref_name", Context.MODE_PRIVATE)
 
-    fun getInt(key:String, defValue: Int):Int{
-        return prefs.getInt(key, defValue)
+    fun getInt(key:String):Int{
+        return prefs.getInt(key, 0)
     }
     fun setInt(key:String, value:Int){
         prefs.edit().putInt(key, value).apply()
     }
 
-    fun getString(key: String, defValue: String):String{
-        return prefs.getString(key, defValue).toString()
+    fun getString(key: String):String{
+        return prefs.getString(key, "").toString()
     }
 
     fun setString(key:String, str:String){
