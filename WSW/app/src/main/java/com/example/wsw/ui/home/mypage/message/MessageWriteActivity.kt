@@ -41,7 +41,8 @@ class MessageWriteActivity : AppCompatActivity(){
     }
 
     private fun sendMessage(){
-        ApiServicempl.api.writeMessage(1,"김덕성","유여대","2021-08-18 00:03:44","asdf").enqueue(object : Callback<MessageListData> {
+        ApiServicempl.api.writeMessage(1,"김덕성","유여대","2021-08-18 00:03:44","asdf")
+                .enqueue(object : Callback<MessageListData> {
             override fun onResponse(call: Call<MessageListData>, response: Response<MessageListData>) {
 
             }
