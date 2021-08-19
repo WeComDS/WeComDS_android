@@ -24,7 +24,7 @@ interface ApiService {
                         @Field("user_pw") user_pw: String,
                         @Field("user_check") user_check: Int): Call<Boolean>
 
-
+    //메시지
     @GET("message/readAll")
     fun requestMessage(): Call<List<MessageListData>>
 
@@ -37,7 +37,7 @@ interface ApiService {
                      @Field("mes_sendID")mes_sendID: String,
                      @Field("mes_receiveID")mes_receiveID: String,
                      @Field("mes_date")mes_date: String,
-                     @Field("mes_content")mes_content: String): Call<MessageListData>
+                     @Field("mes_content")mes_content: String): Call<Boolean>
 
     /* 랜덤 메세지 */
     @FormUrlEncoded
@@ -51,9 +51,20 @@ interface ApiService {
     @POST("random/dislike")
     fun sendDislike(): Call<Boolean>
 
-    //비밀게시판 전체호출
+    //비밀게시판
     @GET("/secret")
     fun secretList(): Call<ArrayList<SecretListGetData>>
+
+    @FormUrlEncoded
+    @POST("secret/write")
+    fun secretPost(@Field("user_id") user_id: Int,
+                   @Field("sec_content") sec_content:String,
+                   @Field("sec_date") sec_date:String,
+                   @Field("sec_CMcount") sec_CMcount:Int,
+                   @Field("sec_like") sec_like:Int): Call<Boolean>
+
+    @DELETE("secret/delete/{id}")
+    fun deleteSecretPost(@Path("id") id: Int): Call<Void>
 
     //스터디게시판 전체호출
     @GET("/study")
