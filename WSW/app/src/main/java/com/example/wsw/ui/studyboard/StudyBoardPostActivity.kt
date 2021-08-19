@@ -17,6 +17,7 @@ class StudyBoardPostActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_study_board_post)
 
+        setPostText()
         val btn_apply = findViewById<Button>(R.id.btn_apply)
         btn_apply.setOnClickListener {
             setDialog()
@@ -60,6 +61,14 @@ class StudyBoardPostActivity : AppCompatActivity() {
                     ContextCompat.getDrawable(this, R.drawable.round_recommend_scrap_selected)
             }
         }
+    }
+    private fun setPostText(){
+        tv_studyTitle.text = intent.getStringExtra("title")
+        tv_studyPlace.text = intent.getStringExtra("style")
+        tv_studyHeadCount.text = intent.getStringExtra("apply")+"/"+intent.getStringExtra("headcount")
+        tv_studyState.text = intent.getStringExtra("state")
+        tv_studyInfo.text = intent.getStringExtra("info")
+        tv_studyNotice.text = intent.getStringExtra("notice")
     }
     private fun setDialog() {
         val dialog = ApplyDialogFragment()

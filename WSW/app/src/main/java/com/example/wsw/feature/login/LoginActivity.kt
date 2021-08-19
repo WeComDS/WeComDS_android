@@ -51,6 +51,7 @@ class  LoginActivity : AppCompatActivity() {
                     .enqueue(object :retrofit2.Callback<LoginResponseData>{
                         override fun onResponse(call: Call<LoginResponseData>, response: Response<LoginResponseData>) {
                             response.body()?.let { it1 -> AppData.prefs.setInt("user_id", it1.user_id) }
+                            response.body()?.let { it1 -> AppData.prefs.setString("user_name", it1.user_name) }
 
                             var intent= Intent(applicationContext, MainActivity::class.java)
                             startActivity(intent)
@@ -62,8 +63,6 @@ class  LoginActivity : AppCompatActivity() {
                         }
 
                     })
-
-
         }
     }
 }

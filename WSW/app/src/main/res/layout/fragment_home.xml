@@ -212,12 +212,16 @@
                         android:layout_toRightOf="@+id/hotTextView"/>
 
                     <!-- TODO list item 별도 생성?-->
-                    <ListView
+                    <LinearLayout
                         android:id="@+id/listview_hotposting"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_alignBaseline="@+id/hotTextView"
-                        android:layout_marginTop="22dp" />
+                        android:layout_marginTop="22dp"
+                        android:orientation="horizontal">
+
+
+                    </LinearLayout>
 
                 </RelativeLayout>
 
