@@ -1,10 +1,9 @@
 package com.example.wsw.api
 
+import com.example.wsw.data.SecretListGetData
 import com.example.wsw.data.LoginResponseData
 import retrofit2.Call
-import retrofit2.http.Field
-import retrofit2.http.FormUrlEncoded
-import retrofit2.http.POST
+import retrofit2.http.*
 
 interface ApiService {
 
@@ -29,4 +28,7 @@ interface ApiService {
     @POST("random/dislike")
     fun sendDislike(): Call<Boolean>
 
+    //비밀게시판 전체호출
+    @GET("/secret")
+    fun secretList(): Call<ArrayList<SecretListGetData>>
 }

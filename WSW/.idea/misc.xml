@@ -30,7 +30,7 @@
         <entry key="..\:/2021_Light_It_Up/WeComDS_android/WSW/app/src/main/res/layout/fragment_random_message.xml" value="0.33061594202898553" />
         <entry key="..\:/2021_Light_It_Up/WeComDS_android/WSW/app/src/main/res/layout/fragment_random_message_view.xml" value="0.33061594202898553" />
         <entry key="..\:/2021_Light_It_Up/WeComDS_android/WSW/app/src/main/res/layout/fragment_review_board.xml" value="0.1" />
-        <entry key="..\:/2021_Light_It_Up/WeComDS_android/WSW/app/src/main/res/layout/fragment_secret_board.xml" value="0.17806484295845998" />
+        <entry key="..\:/2021_Light_It_Up/WeComDS_android/WSW/app/src/main/res/layout/fragment_secret_board.xml" value="0.25" />
         <entry key="..\:/2021_Light_It_Up/WeComDS_android/WSW/app/src/main/res/layout/fragment_study_board.xml" value="0.25" />
         <entry key="..\:/2021_Light_It_Up/WeComDS_android/WSW/app/src/main/res/layout/layout_study_apply_comment.xml" value="0.31302083333333336" />
         <entry key="..\:/2021_Light_It_Up/WeComDS_android/WSW/app/src/main/res/layout/listitem_apply_comment.xml" value="0.31302083333333336" />
@@ -50,7 +50,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="11" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
