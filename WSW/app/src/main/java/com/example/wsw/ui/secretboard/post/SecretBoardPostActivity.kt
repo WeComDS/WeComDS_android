@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.ImageView
 import android.widget.PopupMenu
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.wsw.R
 import com.example.wsw.feature.signup.SignupActivity
@@ -39,6 +40,20 @@ class SecretBoardPostActivity : AppCompatActivity() {
                 }
             }
         }
+
+        //getExtra
+        var secret_content = intent.getStringExtra("secret_content")
+//        var secret_CMcount = intent.getIntExtra("secret_CMcount",0)
+//        var secret_like = intent.getIntExtra("secret_like", 0)
+        var secret_date = intent.getStringExtra("secret_date")
+
+        //findId
+        var txt_sec_date = findViewById<TextView>(R.id.txt_sec_date)
+        var content = findViewById<TextView>(R.id.content)
+
+        //연결
+        txt_sec_date.text = secret_date
+        content.text = secret_content
 
         var btn_recommend = findViewById<ImageView>(R.id.btn_recommend)
         btn_recommend.setOnClickListener {
