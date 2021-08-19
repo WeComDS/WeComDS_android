@@ -51,9 +51,20 @@ interface ApiService {
     @POST("random/dislike")
     fun sendDislike(): Call<Boolean>
 
-    //비밀게시판 전체호출
+    //비밀게시판
     @GET("/secret")
     fun secretList(): Call<ArrayList<SecretListGetData>>
+
+    @FormUrlEncoded
+    @POST("secret/write")
+    fun secretPost(@Field("user_id") user_id: Int,
+                   @Field("sec_content") sec_content:String,
+                   @Field("sec_date") sec_date:String,
+                   @Field("sec_CMcount") sec_CMcount:Int,
+                   @Field("sec_like") sec_like:Int): Call<Boolean>
+
+    @DELETE("secret/delete/{id}")
+    fun deleteSecretPost(@Path("id") id: Int): Call<Void>
 
     //스터디게시판 전체호출
     @GET("/study")
