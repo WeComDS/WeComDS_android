@@ -13,8 +13,8 @@
         style="@style/Text12_Medium"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:includeFontPadding="false"
         android:layout_marginBottom="4dp"
+        android:includeFontPadding="false"
         android:text="삼성전자"
         android:textColor="@color/colorPrimary" />
 
@@ -51,6 +51,7 @@
             android:src="@drawable/ic_thumb_up" />
 
         <TextView
+            android:id="@+id/txt_review_like"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="7dp"
@@ -63,6 +64,7 @@
             android:src="@drawable/ic_comment" />
 
         <TextView
+            android:id="@+id/txt_review_comm"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:text="3" />
