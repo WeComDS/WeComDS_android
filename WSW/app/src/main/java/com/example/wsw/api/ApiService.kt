@@ -63,6 +63,9 @@ interface ApiService {
                    @Field("sec_CMcount") sec_CMcount:Int,
                    @Field("sec_like") sec_like:Int): Call<Boolean>
 
+    @DELETE("secret/delete/{id}")
+    fun deleteSecretPost(@Path("id") id: Int): Call<Void>
+
     //스터디게시판 전체호출
     @GET("/study")
     fun studyList(): Call<ArrayList<StudyListGetData>>

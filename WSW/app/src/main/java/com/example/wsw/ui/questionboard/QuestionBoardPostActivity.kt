@@ -27,6 +27,7 @@ class QuestionBoardPostActivity : AppCompatActivity() {
                 when (it.itemId) {
                     R.id.menu1 -> {
                         Log.d("MainActivity", "눌리는중1")
+
                         return@setOnMenuItemClickListener true
                     }
                     R.id.menu2 -> {

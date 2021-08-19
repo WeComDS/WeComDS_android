@@ -1,6 +1,7 @@
 package com.example.wsw.data
 
 data class SecretListGetData(
+    var sec_id:Int,
     var user_id:Int,
     var sec_content:String,
     var sec_date:String,

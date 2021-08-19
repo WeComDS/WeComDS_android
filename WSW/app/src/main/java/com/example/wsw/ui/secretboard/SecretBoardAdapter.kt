@@ -54,7 +54,7 @@ class SecretBoardAdapter(val context: Context, val secret_list:ArrayList<SecretL
         holder.itemView.setOnClickListener{
             val intent = Intent(holder.itemView.context, SecretBoardPostActivity::class.java)
 
-
+            intent.putExtra("secret_id",secret_list[position].sec_id)
             intent.putExtra("secret_content", secret_list[position].sec_content)
             intent.putExtra("secret_CMcount", secret_list[position].sec_CMcount)
             intent.putExtra("secret_like", secret_list[position].sec_like)
@@ -76,7 +76,13 @@ class SecretBoardAdapter(val context: Context, val secret_list:ArrayList<SecretL
         val secret_date = itemView.findViewById<TextView>(R.id.tv_time)
 
         fun bind(sitem: SecretListGetData, context: Context){
-            secret_content.text = sitem.sec_content
+            var sec_content = sitem.sec_content
+
+            if (sec_content.length > 30){
+                secret_content.text = sec_content.substring(0,30).plus("...")
+            }else{
+                secret_content.text = sec_content
+            }
             secret_like.text = sitem.sec_like.toString()
             secret_comm.text = sitem.sec_CMcount.toString()
             secret_date.text = imakeformat(sitem.sec_date)

@@ -9,11 +9,13 @@ import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
+import com.example.wsw.MainActivity
 import com.example.wsw.R
 import com.example.wsw.api.ApiServicempl
 import com.example.wsw.data.AppData
 import com.example.wsw.data.SecretListGetData
 import com.example.wsw.feature.login.LoginActivity
+import com.example.wsw.ui.secretboard.SecretBoardFragment
 import com.jakewharton.threetenabp.AndroidThreeTen
 import java.time.LocalDateTime
 import org.threeten.bp.LocalDate;
@@ -60,14 +62,17 @@ class SecretBoardWriteActivity : AppCompatActivity(){
                 .enqueue(object : retrofit2.Callback<Boolean> {
                     override fun onResponse(call: Call<Boolean>, response: Response<Boolean>) {
                         if(response.body() == true){
-                            Log.d("성공", "성공")
+                            Log.d("onResponse", "성공")
+                            var intent = Intent(applicationContext, MainActivity::class.java)
+                            startActivity(intent)
                         }else{
-                            Log.d("성공", "실패")
+                            Log.d("onResponse", "실패")
                         }
                     }
-
                     override fun onFailure(call: Call<Boolean>, t: Throwable) {
-                        Log.d("실패",t.message.toString())
+                        Log.d("onResponse",t.message.toString())
+                        var intent = Intent(applicationContext, MainActivity::class.java)
+                        startActivity(intent)
                     }
 
                 }
