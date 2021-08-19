@@ -1,7 +1,7 @@
 package com.example.wsw.api
 
-
 import com.example.wsw.data.messagelist.MessageListData
+import org.w3c.dom.Text
 import retrofit2.Call
 import retrofit2.http.*
 
@@ -15,9 +15,9 @@ interface ApiService {
                         @Field("user_pw") user_pw:String,
                         @Field("user_check") user_check:Int): Call<Boolean>
 
-
-    @GET("message/readAll")
-    fun getMessage(): Call<MessageListData>
+    @FormUrlEncoded
+    @POST("message/readAll")
+    fun requestMessage(): Call<MessageListData>
 
     @POST("random/get")
     fun requestRandomMessage(): Call<String>
