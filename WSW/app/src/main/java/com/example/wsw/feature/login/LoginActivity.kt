@@ -14,11 +14,15 @@ import com.example.wsw.feature.signup.SignupActivity
 import com.example.wsw.ui.home.HomeFragment
 
 class  LoginActivity : AppCompatActivity() {
+    lateinit var email: EditText
+    lateinit var password: EditText
+    lateinit var login: Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        var login = findViewById<Button>(R.id.login)
+        login = findViewById<Button>(R.id.login)
         login.setOnClickListener {
 
             var intent= Intent(applicationContext, HomeFragment::class.java)
@@ -33,52 +37,28 @@ class  LoginActivity : AppCompatActivity() {
             signup_below.setTextColor(ContextCompat.getColor(this, R.color.black))
         }
 
+        email = findViewById(R.id.email)
+        password = findViewById(R.id.password)
 
-        var email = findViewById<EditText>(R.id.email)
-        var password = findViewById<EditText>(R.id.password)
+        email.addTextChangedListener(loginTextWatcher)
+        password.addTextChangedListener(loginTextWatcher)
 
-        //val id = email.text.toString()
-        //val pw = password.text.toString()
 
-        email.addTextChangedListener(object:TextWatcher{
-            override fun afterTextChanged(s: Editable?) {
-                TODO("Not yet implemented")
+    }
+    private val loginTextWatcher: TextWatcher = object : TextWatcher {
+        override fun beforeTextChanged(s: CharSequence, start: Int, count: Int, after: Int) {}
+        override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {
+            val usernameInput = email!!.text.toString().trim { it <= ' ' }
+            val passwordInput = password!!.text.toString().trim { it <= ' ' }
+            login!!.isEnabled = !usernameInput.isEmpty() && !passwordInput.isEmpty()
+
+            if(!email.text.isEmpty() && !password.text.isEmpty()){
+                //로그인버튼활성화
+                //login.background=ContextCompat.getColor(login, R.color.ColorCompleteSendSelected)
+                //login.setTextColor(ContextCompat.getColor(this, R.color.colorAccent))
             }
-
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-                TODO("Not yet implemented")
-            }
-
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                //edittext 다 채워졌는지check
-                if(!email.text.isEmpty()){
-                    //테두리색 바꾸기
-                }
-
-            }
-
-        })
-
-        password.addTextChangedListener(object:TextWatcher{
-            override fun afterTextChanged(s: Editable?) {
-                TODO("Not yet implemented")
-            }
-
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-                TODO("Not yet implemented")
-            }
-
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                if(!password.text.isEmpty()){
-                    //테두리색 바꾸기
-                }
-
-            }
-
-        })
-
-        if(!email.text.isEmpty() && !password.text.isEmpty()){
-            //로그인버튼활성화
         }
+
+        override fun afterTextChanged(s: Editable) {}
     }
 }
