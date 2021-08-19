@@ -1,9 +1,8 @@
 package com.example.wsw.api
 
+import com.example.wsw.data.SecretListGetData
 import retrofit2.Call
-import retrofit2.http.Field
-import retrofit2.http.FormUrlEncoded
-import retrofit2.http.POST
+import retrofit2.http.*
 
 interface ApiService {
 
@@ -14,4 +13,7 @@ interface ApiService {
                         @Field("user_pw") user_pw:String,
                         @Field("user_check") user_check:Int): Call<Boolean>
 
+    //비밀게시판 전체호출
+    @GET("/secret")
+    fun secretList(): Call<ArrayList<SecretListGetData>>
 }

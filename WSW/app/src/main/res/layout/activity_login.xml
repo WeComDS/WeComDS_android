@@ -60,17 +60,20 @@
     </RelativeLayout>
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/input_login"
-        android:layout_margin="33dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="33dp"
         android:background="@drawable/next_login_border"
-        android:textColor="@color/white"
-        android:textSize="14sp"
         android:fontFamily="@font/notosanskr_bold"
         android:includeFontPadding="false"
         android:text="@string/login"
-        android:id="@+id/login"/>
+        android:textColor="@color/white"
+        android:textSize="14sp" />
 
     <RelativeLayout
         android:layout_width="match_parent"
