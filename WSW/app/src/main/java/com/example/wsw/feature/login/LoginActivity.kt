@@ -31,12 +31,25 @@ class  LoginActivity : AppCompatActivity(), TextWatcher {
         findViewById<EditText>(R.id.password)
     }
 
+<<<<<<< HEAD
+=======
+class  LoginActivity : AppCompatActivity() {
+    lateinit var email: EditText
+    lateinit var password: EditText
+    lateinit var login: Button
+
+>>>>>>> 2c52822f29f44ba519c5bab92d10dc8c67c4bdee
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
+<<<<<<< HEAD
         email.addTextChangedListener(this)
         password.addTextChangedListener(this)
+=======
+        login = findViewById<Button>(R.id.login)
+        login.setOnClickListener {
+>>>>>>> 2c52822f29f44ba519c5bab92d10dc8c67c4bdee
 
         requestLogin()
 
@@ -49,6 +62,7 @@ class  LoginActivity : AppCompatActivity(), TextWatcher {
 
         }
 
+<<<<<<< HEAD
     }
 
     private fun requestLogin(){
@@ -81,7 +95,31 @@ class  LoginActivity : AppCompatActivity(), TextWatcher {
     override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
         if(!email.text.isEmpty() && !password.text.isEmpty()){
             //로그인버튼활성화
+=======
+        email = findViewById(R.id.email)
+        password = findViewById(R.id.password)
+
+        email.addTextChangedListener(loginTextWatcher)
+        password.addTextChangedListener(loginTextWatcher)
+
+
+    }
+    private val loginTextWatcher: TextWatcher = object : TextWatcher {
+        override fun beforeTextChanged(s: CharSequence, start: Int, count: Int, after: Int) {}
+        override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {
+            val usernameInput = email!!.text.toString().trim { it <= ' ' }
+            val passwordInput = password!!.text.toString().trim { it <= ' ' }
+            login!!.isEnabled = !usernameInput.isEmpty() && !passwordInput.isEmpty()
+
+            if(!email.text.isEmpty() && !password.text.isEmpty()){
+                //로그인버튼활성화
+                //login.background=ContextCompat.getColor(login, R.color.ColorCompleteSendSelected)
+                //login.setTextColor(ContextCompat.getColor(this, R.color.colorAccent))
+            }
+>>>>>>> 2c52822f29f44ba519c5bab92d10dc8c67c4bdee
         }
+
+        override fun afterTextChanged(s: Editable) {}
     }
 
     override fun afterTextChanged(s: Editable?) {
