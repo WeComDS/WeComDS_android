@@ -13,6 +13,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:usesCleartextTraffic="true"
+        android:name=".data.AppData"
         android:theme="@style/Theme.WSW"
         tools:targetApi="m">
         <activity
@@ -30,6 +31,8 @@
 
         <activity android:name=".ui.home.mypage.MypageActivity"/>
         <activity android:name=".ui.home.mypage.message.MessageActivity"/>
+        <activity android:name=".ui.home.mypage.message.MessageListActivity"/>
+        <activity android:name=".ui.home.mypage.message.MessageWriteActivity"/>
         <activity android:name=".ui.home.mypage.scrab.ScrabActivity"/>
         <activity android:name=".ui.home.mypage.studylist.StudylistActivity"/>
         <activity android:name=".ui.home.NotificationActivity"/>
